@@ -1,0 +1,8 @@
+{
+    "defaultView": "FAQFormResponsive",
+    "views": [
+        "FAQFormResponsive",
+        "FAQFormTablet",
+        "FAQFormMobile"
+    ]
+}

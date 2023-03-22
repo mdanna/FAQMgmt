@@ -1,0 +1,8 @@
+{
+    "defaultView": "MainFormResponsive",
+    "views": [
+        "MainFormResponsive",
+        "MainFormTablet",
+        "MainFormMobile"
+    ]
+}

@@ -1,0 +1,2 @@
+ALTER TABLE `FAQ`
+	MODIFY `aswear` VARCHAR(2000);

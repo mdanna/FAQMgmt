@@ -1,0 +1,2 @@
+ALTER TABLE `Profile`
+	MODIFY `email` VARCHAR(2000);

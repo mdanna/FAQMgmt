@@ -1,0 +1,9 @@
+{
+  "serviceType" : "integration",
+  "assets" : [ {
+    "name" : "swagger.json",
+    "type" : "zipName",
+    "empty" : true
+  } ],
+  "empty" : true
+}

@@ -1,0 +1,16 @@
+{
+    "FAQmgt_FAQ": {
+        "servicename": "FAQmgt",
+        "serviceid": "5b207e0b-325f-4a18-ad16-5372716f1ca6",
+        "type": "objectsvcs",
+        "objectname": "FAQ",
+        "objectid": "183866"
+    },
+    "FAQmgt_Profile": {
+        "servicename": "FAQmgt",
+        "serviceid": "5b207e0b-325f-4a18-ad16-5372716f1ca6",
+        "type": "objectsvcs",
+        "objectname": "Profile",
+        "objectid": "183868"
+    }
+}

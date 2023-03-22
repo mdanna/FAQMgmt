@@ -1,0 +1,38 @@
+{
+    "black": {
+        "color": {
+            "value": "4a4a4aff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "blue": {
+        "color": {
+            "value": "2860a4ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "green": {
+        "color": {
+            "value": "61c992ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "grey": {
+        "color": {
+            "value": "b5b5b5ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    }
+}

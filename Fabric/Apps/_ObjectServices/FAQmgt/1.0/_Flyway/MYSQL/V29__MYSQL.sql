@@ -1,0 +1,2 @@
+ALTER TABLE `FAQ`
+	MODIFY `workflowStatus` VARCHAR(100);

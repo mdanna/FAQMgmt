@@ -1,0 +1,2 @@
+ALTER TABLE `FAQ`
+	MODIFY `answerUserName` VARCHAR(2000);

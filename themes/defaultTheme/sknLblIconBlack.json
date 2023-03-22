@@ -1,0 +1,70 @@
+{
+  "android": {
+    "font_name": "icomoon"
+  },
+  "androidwearos": {
+    "font_name": "default"
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "constants": {
+    "font_color": {
+      "key": "color",
+      "value": "${themes.black}"
+    }
+  },
+  "desktopweb": {
+    "font_name": "icomoon"
+  },
+  "font_color": "4a4a4aff",
+  "font_name": "iphoneSystem",
+  "font_size": 200,
+  "font_style": "normal",
+  "font_weight": "400",
+  "ipad": {
+    "font_name": "icomoon"
+  },
+  "iphone": {
+    "font_name": "icomoon"
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "font_name": "icomoon"
+  },
+  "kuid": "sdb3a7524c344c15ab01a4c6c4898716",
+  "spaan": {
+    "font_name": "icomoon"
+  },
+  "spaandroidtablet": {
+    "font_name": "icomoon"
+  },
+  "spaip": {
+    "font_name": "icomoon"
+  },
+  "spaipad": {
+    "font_name": "icomoon"
+  },
+  "spawindowstablet": {
+    "font_name": "icomoon"
+  },
+  "spawinphone8": {
+    "font_name": "icomoon"
+  },
+  "tabrcandroid": {
+    "font_name": "icomoon"
+  },
+  "wType": "Label",
+  "watchos": {
+    "font_name": "System"
+  },
+  "windows8": {
+    "font_name": "icomoon"
+  },
+  "winphone8": {
+    "font_name": "icomoon"
+  }
+}

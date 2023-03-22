@@ -1,0 +1,29 @@
+{
+  "subType" : "customapp",
+  "description" : "FAQmgt",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "GetFAQLeap",
+    "version" : "1.0",
+    "etag" : "ac06bfb2-e64a-4a0d-bef0-b69c58160338"
+  }, {
+    "name" : "LEAP_FAQmgt",
+    "version" : "1.0",
+    "etag" : "bf80b4c5-596d-4cd3-918c-ef6419297b73"
+  }, {
+    "name" : "LEAP_F_Category",
+    "version" : "1.0",
+    "etag" : "afd48110-5582-4449-b033-d93cb5f76407"
+  }, {
+    "name" : "LEAP_F_DailyHealthFAQ",
+    "version" : "1.0",
+    "etag" : "7e78ff3f-a6ce-4779-8a3c-5b5916953748"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "FAQmgt",
+    "version" : "1.0",
+    "etag" : "c3adaf51-ec16-4506-b9c9-17d20738e6f4"
+  } ],
+  "identity" : [ "DHdir" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

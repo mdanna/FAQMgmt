@@ -1,0 +1,18 @@
+CREATE TABLE `Profile`(
+	`birthday` DATETIME(3),
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`gender` VARCHAR(100),
+	`heigth` BIGINT,
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`measureUnit` VARCHAR(100),
+	`name` VARCHAR(40),
+	`pictureURL` VARCHAR(2000),
+	`profileID` BIGINT NOT NULL AUTO_INCREMENT,
+	`SoftDeleteFlag` BOOLEAN,
+	`weight` BIGINT,
+	PRIMARY KEY(`profileID`)
+);
+ALTER TABLE `Profile`
+	ADD CONSTRAINT `ee2ede439cab1de3e08848d98e4c0a` UNIQUE KEY(`profileID`);

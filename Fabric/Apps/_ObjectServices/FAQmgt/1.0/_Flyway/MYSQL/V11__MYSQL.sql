@@ -1,0 +1,2 @@
+ALTER TABLE `Glucose`
+	ADD CONSTRAINT `c851c692b6640a9e50da535e5d40b1` FOREIGN KEY(`profileID`) REFERENCES `Profile`(`profileID`);

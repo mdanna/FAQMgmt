@@ -1,0 +1,8 @@
+{
+    "defaultView": "StdHeaderResponsive",
+    "views": [
+        "StdHeaderResponsive",
+        "StdHeaderTablet",
+        "StdHeaderMobile"
+    ]
+}

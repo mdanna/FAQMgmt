@@ -1,0 +1,982 @@
+
+{
+    "swagger":"2.0",
+    "info":{
+        "title":"HCL Domino Leap",
+        "description":"A swagger description of the REST APIs exposed by HCL Domino Leap",
+        "version":"1.1.0.9"
+    },
+    "host":"apps.hcl-showcase.com",
+    "basePath":"/volt-api",
+    "schemes":[
+        "http",
+        "https"
+    ],
+    "externalDocs":{
+        "description":"The REST API reference",
+        "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_rest_api_ref.html"
+    },
+    "paths":{
+        "/{access-type}/org/data/35a8ff63-ae5b-4680-b220-b17e07581aac/F_Category":{
+            "get":{
+                "summary":"List Records",
+                "description":"List an application's records",
+                "externalDocs":{
+                    "description":"HCL Help Center - *List*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_list.html"
+                },
+                "operationId":"list_submission_records",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+                    {
+                        "name":"format",
+                        "in":"query",
+                        "description":"Format the data is to be returned in.",
+                        "required":false,
+                        "type":"string",
+                        "enum":[
+                            "application/atom+xml",
+                            "application/json"
+                        ]
+                    },
+                    {
+                        "name":"metadata",
+                        "in":"query",
+                        "description":"Set to *true* to display extra information about items in the form. *Format must be application/json.*",
+                        "required":false,
+                        "type":"string",
+                        "enum":[
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "name":"sortBy",
+                        "in":"query",
+                        "description":"The order in which the data must be returned. The default sort order is indeterminate.",
+                        "required":false,
+                        "type":"string",
+                        "enum":[
+                            "lastUpdated",
+                            "itemAuthor",
+                            "itemAuthorEmail",
+                            "flowState",
+                            "dbId",
+                            "F_Category",
+                            "F_DataGrid1"
+                        ]
+                    },
+                    {
+                        "name":"order",
+                        "in":"query",
+                        "description":"Order of returned data",
+                        "required":false,
+                        "type":"string",
+                        "enum":[
+                            "ASC",
+                            "DESC"
+                        ]
+                    },
+                    {
+                        "name":"from",
+                        "in":"query",
+                        "description":"The starting offset of a range of results.",
+                        "required":false,
+                        "type":"integer",
+                        "format":"int32"
+                    },
+                    {
+                        "name":"to",
+                        "in":"query",
+                        "description":"The ending offset of a range of results. If used in conjunction with from, number of results returned will be one less than the number specified.",
+                        "required":false,
+                        "type":"integer",
+                        "format":"int32"
+                    }
+                ],
+                "produces":[
+                    "application/json",
+                    "application/atom+xml"
+                ],
+                "responses":{
+                    "200":{
+                        "description":"A successful response",
+                        "schema":{
+                            "$ref":"#/definitions/Submissions"
+                        }
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]
+            },
+            "post":{
+                "summary":"Create Record",
+                "description":"Create a new record.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Create*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_create.html"
+                },
+                "operationId":"create_submission_record",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"Security mode of API call.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+
+                    {
+                        "name":"freedomIdentifyKey",
+                        "in":"query",
+                        "description":"A token which must be provided both in this query parameter and in a cookie with the same name. The content of the token does not matter but the content of the query parameter and of the cookie MUST match in order for the request to be processed. Note that SwaggerUI does NOT support adding cookies so if you want to call this endpoint using SwaggerUI, you will have to add this cookie to your browser manually.",
+                        "required":true,
+                        "type":"string"
+                    },
+                    {
+                        "name":"payload",
+                        "in":"body",
+                        "description":"The entry payload.",
+                        "required":true,
+                        "schema":{
+                            "$ref":"#/definitions/CreateEntry"
+                        }
+                    }
+                ],
+                "consumes":[
+                    "application/json",
+                    "application/atom+xml"
+                ],
+                "produces":[
+                    "application/json",
+                    "application/atom+xml"
+                ],
+                "responses":{
+                    "201":{
+                        "description":"A successful response"
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]
+            }
+        },
+        "/{access-type}/org/data/35a8ff63-ae5b-4680-b220-b17e07581aac/F_Category/metadata":{
+            "get":{
+                "summary":"Display application metadata",
+                "description":"Retrieves a description of the items in your form.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Metadata*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_metadata.html"
+                },
+                "operationId":"display_application_metadata",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "default":"secure",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ]
+                    }
+
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "responses":{
+                    "200":{
+                        "description":"A successful response",
+                        "schema":{
+                            "$ref":"#/definitions/Metadata"
+                        }
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]
+            }
+        },
+        "/{access-type}/org/data/35a8ff63-ae5b-4680-b220-b17e07581aac/F_Category/{record-uid}":{
+            "get":{
+                "summary":"Retrieve Record",
+                "description":"Retrieve a single record.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Retrieve*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_retrieve.html"
+                },
+                "operationId":"retrieve_submission_record",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+
+                    {
+                        "name":"record-uid",
+                        "in":"path",
+                        "description":"The ID of the record being retrieved.",
+                        "required":true,
+                        "type":"string"
+                    },
+                    {
+                        "name":"format",
+                        "in":"query",
+                        "description":"The expected format of the response.",
+                        "required":false,
+                        "type":"string",
+                        "enum":[
+                            "application/json",
+                            "application/atom+xml"
+                        ]
+                    },
+                    {
+                        "name":"itemOnly",
+                        "in":"query",
+                        "description":"Set to *true* to receive a simplified response. *Format must be application/json.*",
+                        "required":false,
+                        "type":"string",
+                        "enum":[
+                            "true",
+                            "false"
+                        ],
+                        "default":"false"
+                    }
+                ],
+                "produces":[
+                    "application/json",
+                    "application/atom+xml"
+                ],
+                "responses":{
+                    "200":{
+                        "description":"A successful response",
+                        "schema":{
+                            "$ref":"#/definitions/SingleSubmission"
+                        }
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]
+            },
+            "put":{
+                "summary":"Update Record",
+                "description":"Update existing record.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Update*.",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_update.html"
+                },
+                "operationId":"update_submission_record",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+                    {
+                        "name":"record-uid",
+                        "in":"path",
+                        "description":"The ID of the record being updated.",
+                        "required":true,
+                        "type":"string"
+                    },
+                    {
+                        "name":"payload",
+                        "in":"body",
+                        "description":"The updated entry payload.",
+                        "required":true,
+                        "schema":{
+                            "$ref":"#/definitions/Entry"
+                        }
+                    },
+                    {
+                        "name":"freedomIdentifyKey",
+                        "in":"query",
+                        "description":"A token which must be provided both in this query parameter and in a cookie with the same name. The content of the token does not matter but the content of the query parameter and of the cookie MUST match in order for the request to be processed. Note that SwaggerUI does NOT support adding cookies so if you want to call this endpoint using SwaggerUI, you will have to add this cookie to your browser manually.",
+                        "required":true,
+                        "type":"string"
+                    }
+                ],
+                "consumes":[
+                    "application/json",
+                    "application/atom+xml"
+                ],
+                "produces":[
+                    "application/json",
+                    "application/atom+xml"
+                ],
+                "responses":{
+                    "200":{
+                        "description":"A successful response"
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]
+            },
+            "delete":{
+                "summary":"Delete Record",
+                "description":"This action deletes an existing record.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Delete*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_delete.html"
+                },
+                "operationId":"delete_submission_record",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+                    {
+                        "name":"record-uid",
+                        "in":"path",
+                        "description":"The record ID of the record being deleted.",
+                        "required":true,
+                        "type":"string"
+                    },
+                    {
+                        "name":"freedomIdentifyKey",
+                        "in":"query",
+                        "description":"A token which must be provided both in this query parameter and in a cookie with the same name. The content of the token does not matter but the content of the query parameter and of the cookie MUST match in order for the request to be processed. Note that SwaggerUI does NOT support adding cookies so if you want to call this endpoint using SwaggerUI, you will have to add this cookie to your browser manually.",
+                        "required":true,
+                        "type":"string"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"A successful response"
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]
+            }
+        },
+        "/{access-type}/org/data/35a8ff63-ae5b-4680-b220-b17e07581aac/F_Category/attachment/{attachment-uid}":{
+            "get":{
+                "summary":"Retrieve Attachment",
+                "description":"Retrieves an attachment.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Retrieve Attachment*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_retrieve_attachment.html"
+                },
+                "operationId":"retrieve_attachment",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+                    {
+                        "name":"attachment-uid",
+                        "in":"path",
+                        "description":"The Universal ID of the attachment.",
+                        "required":true,
+                        "type":"string"
+                    }
+                ],              
+                "responses":{
+                    "200":{
+                        "description":"A successful response"
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]                
+               }        
+        },
+        "/{access-type}/org/data/35a8ff63-ae5b-4680-b220-b17e07581aac/F_Category/attachment/":{
+            "post":{
+                "summary":"Create Attachment",
+                "description":"Creates an attachment.",
+                "externalDocs":{
+                    "description":"HCL Help Center - *Create Attachment*",
+                    "url":"https://help.hcltechsw.com/domino_volt/1.0.5/ref_data_rest_api_create_attachment.html"
+                },
+                "operationId":"create_attachment",
+                "parameters":[
+                    {
+                        "name":"access-type",
+                        "in":"path",
+                        "description":"The API Call's security mode.",
+                        "required":true,
+                        "type":"string",
+                        "enum":[
+                            "secure",
+                            "anon"
+                        ],
+                        "default":"secure"
+                    },
+           
+                    {
+                        "name":"filename",
+                        "in":"formData",
+                        "description":"Name of the attachment file",
+                        "required":true,
+                        "type":"file"
+                    }                       
+                ],
+                "consumes":[
+                    "multipart/form-data"
+                ],         
+                "produces":[
+                    "application/json",
+                    "application/atom+xml"
+                ],  
+                "responses":{
+                    "200":{
+                        "description":"A successful response",
+                        "schema":{
+                            "$ref":"#/definitions/Attachment"
+                        }                        
+                    },
+                    "500":{
+                        "description":"Unexpected error"
+                    }
+                },
+                "tags":[
+                    "Data REST API"
+                ]                
+               }        
+        }        
+        
+    },
+    "securityDefinitions":{
+        "basic":{
+            "type":"basic",
+            "description":"The standard authentication for all endpoints under the /volt-api context root."
+        }
+    },
+    "security":[
+        {
+            "basic":[
+
+            ]
+        }
+    ],
+    "definitions":{
+        "SingleSubmission":{
+            "type":"object",
+            "properties":{
+                "items":{
+                    "type":"array",
+                    "items":{
+                        "$ref":"#/definitions/Submission"
+                    }
+                },
+                "application_uid":{
+                    "type":"string",
+                    "description":"The uid of the application."
+                },
+                "formId":{
+                    "type":"string",
+                    "description":"The id of the form."
+                },
+                "recordCount":{
+                    "type":"integer",
+                    "format":"int32",
+                    "description":"The number of records returned."
+                }
+            },
+            "required":[
+                "items",
+                "application_uid",
+                "formId",
+                "recordCount"
+            ],
+            "example":{
+                "items":[
+                    {
+                        "lastModified":"2015-01T12:00:00.000Z",
+                        "lastModifiedBy":{
+                            "displayName":"Example User",
+                            "email":"user@yourcompany.com",
+                            "login":"user"
+                        },
+                        "created":"2015-01-01T12:00:00.000Z",
+                        "createdBy":{
+                            "displayName":"Example User",
+                            "email":"user@yourcompany.com",
+                            "login":"user"
+                        },
+                        "flowState":"ST_End",
+                        "id":0,
+                        "uid":"11111111-1111-1111-1111-111111111111",
+                        "F_Category":"Example Text",
+                        "F_DataGrid1":"Example Text"
+                    }
+                ],
+                "application_uid":"00000000-0000-0000-0000-000000000000",
+                "formId":"F_Form1",
+                "recordCount":1
+            }
+        },
+        "Submissions":{
+            "type":"object",
+            "properties":{
+                "items":{
+                    "type":"array",
+                    "items":{
+                        "$ref":"#/definitions/Submission"
+                    }
+                },
+                "application_uid":{
+                    "type":"string",
+                    "description":"The uid of the application."
+                },
+                "formId":{
+                    "type":"string",
+                    "description":"The id of the form."
+                },
+                "recordCount":{
+                    "type":"integer",
+                    "format":"int32",
+                    "description":"The number of records returned."
+                }
+            },
+            "required":[
+                "items",
+                "application_uid",
+                "formId",
+                "recordCount"
+            ],
+            "example":{
+                "metadata":{
+                    "fields":[
+                        {
+                            "name":"F_Category",
+                            "uiType":"textField",
+                            "dataType":"string",
+                            "label":"Enter a new Category",
+                            "dataLabel":"",
+                            "customAttribute":"",
+                            "required":false
+                        },
+                        {
+                            "name":"F_DataGrid1",
+                            "uiType":"dataGrid",
+                            "dataType":"string",
+                            "label":"Example Label",
+                            "dataLabel":"Example DataLabel",
+                            "required":false
+                        }
+                    ]
+                },
+                "items":[
+                    {
+                        "lastModified":"2015-01-01T12:00:00.000Z",
+                        "lastModifiedBy":{
+                            "displayName":"Example User",
+                            "email":"user@yourcompany.com",
+                            "login":"user"
+                        },
+                        "created":"2015-01-01T12:00:00.000Z",
+                        "createdBy":{
+                            "displayName":"Example User",
+                            "email":"user@yourcompany.com",
+                            "login":"user"
+                        },
+                        "flowState":"ST_End",
+                        "id":0,
+                        "uid":"11111111-1111-1111-1111-111111111111",
+                        "F_Category":"Example Text",
+                        "F_DataGrid1":"Example Text"
+                    }
+                ],
+                "application_uid":"00000000-0000-0000-0000-000000000000",
+                "formId":"F_Form1",
+                "recordCount":1
+            }
+        },
+        "Metadata":{
+            "type":"object",
+            "properties":{
+                "fields":{
+                    "type":"array",
+                    "items":{
+                        "$ref":"#/definitions/Field"
+                    }
+                }
+            },
+            "required":[
+                "fields"
+            ]
+        },
+        "Field":{
+            "type":"object",
+            "properties":{
+                "name":{
+                    "type":"string",
+                    "description":"The identifier of the field, used when submitting or retrieving submission data as the identifier for a field's data"
+                },
+                "uiType":{
+                    "type":"string",
+                    "description":"The type of the widget for this field."
+                },
+                "dataType":{
+                    "type":"string",
+                    "description":"The data type of the field."
+                },
+                "required":{
+                    "type":"boolean",
+                    "description":"Whether this field is required for submission. Note that this may change during the actual runtime due to rules or other runtime changes."
+                },
+                "label":{
+                    "type":"string",
+                    "description":"A descriptive label for the field."
+                },
+                "decimalPlaces":{
+                    "type":"integer",
+                    "format":"int32",
+                    "description":"Defines the number of decimal places to display, only valid for numerical fields."
+                },
+                "currencyCode":{
+                    "type":"string",
+                    "description":"Defines the currency code used for the field according to ISO 4217, only valid for currency fields."
+                },
+                "Options":{
+                    "description":"The available Options for this field, only valid for selectOne, selectMany, dropDown, and survey fields.",
+                    "$ref":"#/definitions/Options"
+                },
+                "survey":{
+                    "type":"string",
+                    "description":"Defines the survey id, valid only for surveyQuestionSingle."
+                },
+                "min":{
+                    "type":"number",
+                    "format":"double",
+                    "description":"Defines the minimum value, valid only for numerical fields."
+                },
+                "max":{
+                    "type":"number",
+                    "format":"double",
+                    "description":"Defines the maximum value, valid only for numerical fields."
+                },
+                "innerForm":{
+                   "type":"object",
+                    "description":"The fields and forms nested within the table widget."
+                }
+            },
+            "required":[
+                "name",
+                "uiType",
+                "dataType",
+                "label",
+                "required"
+            ],
+            "example":{
+                "name":"F_SingleLine1",
+                "uiType":"textField",
+                "dataType":"string",
+                "label":"Example Label"
+            }
+        },
+        "Options":{
+            "type":"object",
+            "properties":{
+                "Option":{
+                    "type":"array",
+                    "description":"An available Option.",
+                    "items":{
+                        "$ref":"#/definitions/Option"
+                    }
+                }
+            },
+            "required":[
+                "Option"
+            ]
+        },
+        "Option":{
+            "type":"object",
+            "properties":{
+                "label":{
+                    "type":"string",
+                    "description":"The displayed value of this Option."
+                },
+                "value":{
+                    "type":"string",
+                    "description":"The stored value of this Option."
+                }
+            },
+            "required":[
+                "label",
+                "value"
+            ]
+        },
+        "Identity":{
+            "type":"object",
+            "properties":{
+                "displayName":{
+                    "type":"string",
+                    "description":"The full name of the user."
+                },
+                "email":{
+                    "type":"string",
+                    "description":"The email of the user."
+                },
+                "login":{
+                    "type":"string",
+                    "description":"The login id of the user."
+                }
+            },
+            "required":[
+                "displayName",
+                "email",
+                "login"
+            ]
+        },
+        "SubmissionData":{
+            "properties":{
+
+				"F_Category":{
+                    "type":"string"
+                }
+
+				,"F_DataGrid1":{
+                    "type":"string"
+                }
+
+            }
+        },
+        "Submission":{
+            "allOf":[
+                {
+                    "type":"object",
+                    "properties":{
+                        "lastModified":{
+                            "type":"string",
+                            "format":"date-time",
+                            "description":"The date and time that this record was last updated."
+                        },
+                        "lastModifiedBy":{
+                            "$ref":"#/definitions/Identity"
+                        },
+                        "created":{
+                            "type":"string",
+                            "format":"date-time",
+                            "description":"The date and time that this record was created."
+                        },
+                        "createdBy":{
+                            "$ref":"#/definitions/Identity"
+                        },
+                        "flowState":{
+                            "type":"string",
+                            "description":"The Id of the current stage of the record.",
+                            "enum":[                                "ST_Start",
+                                "ST_Submitted"
+                            ]
+                        },
+                        "id":{
+                            "type":"integer",
+                            "format":"int32",
+                            "description":"An Optional human readable identifier for the record."
+                        },
+                        "uid":{
+                            "type":"string",
+                            "description":"A globally unique identifier for the record"
+                        }
+                    },
+                    "required":[
+                        "lastModified",
+                        "lastModifiedBy",
+                        "created",
+                        "createdBy",
+                        "flowState",
+                        "id",
+                        "uid"
+                    ],
+                    "example":{
+                        "lastModified":"2015-04-15T14:45:12.558Z",
+                        "lastModifiedBy":{
+                            "displayName":"Demo Demo",
+                            "email":"demo@yourcompany.com",
+                            "login":"demo"
+                        },
+                        "created":"2015-04-15T14:45:12.558Z",
+                        "createdBy":{
+                            "displayName":"Demo Demo",
+                            "email":"demo@yourcompany.com",
+                            "login":"demo"
+                        },
+                        "flowState":"ST_End",
+                        "id":0,
+                        "uid":"8cca2f81-207c-4780-875f-ee1c2bee4df1"
+                    }
+                },
+                {
+                    "$ref":"#/definitions/SubmissionData"
+                }
+            ]
+        },
+        "Attachment":{
+            "type":"object",
+            "properties":{
+                "id":{
+                    "type":"integer"
+                },
+                "uid": {
+                	"type":"string"
+                },
+                "fileName" : {
+                	"type":"string"
+                }
+            },
+            "required":[
+            	"uid","id","fileName"
+            ],
+            "example":{
+				"uid":"ccb92c12-d435-4288-baff-878d8d3c2923",
+				"id":123,
+				"fileName":"some file.doc"
+            }
+        },
+                                
+        "Entries":{
+            "type":"object",
+            "properties":{
+                "items":{
+                    "type":"array",
+                    "items":{
+                        "$ref":"#/definitions/Entry"
+                    }
+                }
+            },
+            "required":[
+                "items"
+            ],
+            "example":{
+                "items":[
+                    {
+                        "flowState":"ST_Start",
+                        "pressedButton":"S_Submit",
+                        "F_Category":"Example Text",
+                        "F_DataGrid1":"Example Text"
+                    }
+                ]
+            }
+        },
+        "Entry":{
+            "allOf":[
+                {
+                    "type":"object",
+                    "properties":{
+                        "pressedButton":{
+                            "type":"string",
+                            "description":"The ID of the stage action submit button, which simulates the submission."
+                        },
+                        "flowState":{
+                            "type":"string",
+                            "description":"The ID of the current stage of the record.",
+                            "enum":[
+                                "ST_Start",
+                                "ST_Submitted"
+                            ]
+                        }
+                    },
+                    "required":[
+                        "pressedButton"
+                    ],
+                    "example":{
+                        "flowState":"ST_Start",
+                        "pressedButton":"S_Submit",
+                        "F_Category":"Example Text",
+                        "F_DataGrid1":"Example Text"
+                    }
+                },
+                {
+                    "$ref":"#/definitions/SubmissionData"
+                }
+            ]
+        },
+        
+        "CreateEntry":{
+            "type":"object",
+            "properties":{
+                "pressedButton":{
+                    "type":"string",
+                    "description":"The ID of the stage action submit button, which simulates the submission."
+                }
+            },
+            "required":[
+                "pressedButton"
+            ],
+            "example":{
+                        "pressedButton":"S_Submit",
+                        "F_Category":"Example Text",
+                        "F_DataGrid1":"Example Text"
+                    }
+        }        
+    }
+}

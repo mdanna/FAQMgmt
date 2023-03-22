@@ -1,0 +1,2 @@
+ALTER TABLE `FAQ`
+	ADD `thumbnail` VARCHAR(40);

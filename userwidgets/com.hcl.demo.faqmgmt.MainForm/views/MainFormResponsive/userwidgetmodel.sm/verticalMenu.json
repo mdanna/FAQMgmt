@@ -1,0 +1,73 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sa8d941184ff4de59a6b516f29d2a308",
+    "_top_": {
+        "type": "string",
+        "value": "110dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "250dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {},
+    "id": "verticalMenu",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "h5c1ec6f84514a42a8816f9d76c89268",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "MainFormResponsive",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "isVisible": true
+        },
+        "b2": {
+            "isVisible": true
+        },
+        "b3": {
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "-2500dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "j316c9a6c6fc4c9580b1faa4902ecd24",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

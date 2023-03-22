@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "24dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s995e9fe286c4b15a198585b07f64cec",
+    "_top_": {
+        "type": "string",
+        "value": "210dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "230dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 0,
+    "data": {
+        "imgIcon": "edit.png",
+        "item": "Settings",
+        "itemKey": "settings",
+        "lblIcon": "6",
+        "showImgIcon": false,
+        "showLblIcon": true
+    },
+    "id": "itemSettings",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d4d38979634c4b1fb08acbdd87b37652",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "VerticalMenu",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "f44527835d464eeca7d68fd3e020bdd9",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

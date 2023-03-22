@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "Profile",
+  "targetObject" : "FAQ",
+  "relationshipKeys" : [ {
+    "sourceField" : "profileID",
+    "targetField" : "profileID",
+    "etag" : "3f247578-34e8-4427-870d-a0bb09223e89"
+  } ],
+  "name" : "Profile_FAQ",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

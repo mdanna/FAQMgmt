@@ -1,0 +1,2 @@
+ALTER TABLE `FAQ`
+	MODIFY `questionUserEmail` VARCHAR(2000);

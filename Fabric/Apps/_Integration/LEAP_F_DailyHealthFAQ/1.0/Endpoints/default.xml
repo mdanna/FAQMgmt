@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" type="JSON" url="https://apps.hcl-showcase.com/volt-api/anon/org/data/35a8ff63-ae5b-4680-b220-b17e07581aac/F_DailyHealthFAQ" encryptSecureInfo="false">
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+        <entry>
+            <key>identityProviderType</key>
+            <value>userstore</value>
+        </entry>
+        <entry>
+            <key>identityProvider</key>
+            <value>DHdir</value>
+        </entry>
+    </config>
+    <apiThrottling/>
+    <jsonpath>true</jsonpath>
+</endpoint>
