@@ -1,0 +1,47 @@
+{
+  "background_color": "61c992ff",
+  "bg_type": "one",
+  "border_color": "61c992ff",
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "constants": {
+    "desktopweb": {
+      "background_color": {
+        "key": "color",
+        "value": "${themes.red}"
+      }
+    }
+  },
+  "desktopweb": {
+    "background_color": "a31414ff",
+    "bg_type": "one",
+    "border_type": 0,
+    "bottom_left_border_color": "a31414ff",
+    "bottom_left_border_radius": 0,
+    "bottom_left_border_style": "rc",
+    "bottom_left_border_width": 1,
+    "bottom_right_border_color": "a31414ff",
+    "bottom_right_border_radius": 0,
+    "bottom_right_border_style": "rc",
+    "bottom_right_border_width": 1,
+    "cursor_type": "pointer",
+    "isForked": true,
+    "top_left_border_color": "a31414ff",
+    "top_left_border_radius": 0,
+    "top_left_border_style": "rc",
+    "top_left_border_width": 1,
+    "top_right_border_color": "a31414ff",
+    "top_right_border_radius": 0,
+    "top_right_border_style": "rc",
+    "top_right_border_width": 1
+  },
+  "isDefaultSkin": false,
+  "kuid": "s8f02a26a62341b098970fac1414bfc1",
+  "wType": "FlexContainer",
+  "windows8": {
+    "background_color": "a31414ff",
+    "bg_type": "one",
+    "isForked": true
+  }
+}

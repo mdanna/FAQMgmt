@@ -36,6 +36,12 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {},
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s6c1ca88564c4422867b3a085ca30a04"
+        }
+    },
+    "disabledSkins": {},
     "id": "fieldRememberMe",
     "info": null,
     "iscustomlayout": false,

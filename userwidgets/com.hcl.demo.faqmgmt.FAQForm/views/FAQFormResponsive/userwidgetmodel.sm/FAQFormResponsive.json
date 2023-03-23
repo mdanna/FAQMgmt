@@ -37,7 +37,13 @@
     "children": [
         "mainHeader",
         "verticalMenu",
-        "hamburgerMenu"
+        "flxContent",
+        "hamburgerMenu",
+        "flxMask",
+        "listSelector",
+        "editQuestion",
+        "processFaq",
+        "editAnswer"
     ],
     "clipbounds": false,
     "containerweight": 100,

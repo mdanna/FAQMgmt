@@ -1,0 +1,112 @@
+{
+    "classname": "StdEditArea",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g36eb716a5f84815ab6940a3143ed3d4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "label",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "de811be0876d4c4c8127104fb5193359"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ea75e88e1a3f49d8a580499254c16c80",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txaField",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textarea",
+                        "wType": "TextArea"
+                    },
+                    "srcWgtKUID": "i523036a16114ee495c902a1da24c9ba"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c0a3da781bb4441bbe87f45917afe4b7",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 3,
+                    "propertyKey": "placeholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "placeholder",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txaField",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextArea"
+                    },
+                    "srcWgtKUID": "i523036a16114ee495c902a1da24c9ba"
+                },
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "sbc2a6155e364b8592400e8d0cd0cfa0",
+                    "group": "General",
+                    "kuid": "b6601f71c6e943c99b4dfcc537096ae3",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "skinField",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skinField",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxField",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "f86b1a2ccec444b99afa25b36dbb7202"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.demo.faqmgmt",
+    "version": "1.0.0"
+}

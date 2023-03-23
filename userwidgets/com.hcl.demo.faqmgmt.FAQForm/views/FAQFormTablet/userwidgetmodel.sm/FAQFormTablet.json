@@ -36,7 +36,10 @@
     "canUpdateUI": true,
     "children": [
         "mainHeader",
-        "verticalMenu"
+        "verticalMenu",
+        "flxContent",
+        "flxMask",
+        "listSelector"
     ],
     "clipbounds": false,
     "containerweight": 100,

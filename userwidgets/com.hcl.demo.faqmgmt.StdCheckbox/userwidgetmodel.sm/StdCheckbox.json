@@ -41,6 +41,11 @@
     ],
     "clipbounds": false,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s6c1ca88564c4422867b3a085ca30a04"
+        }
+    },
     "enablescrolling": true,
     "id": "StdCheckbox",
     "info": null,

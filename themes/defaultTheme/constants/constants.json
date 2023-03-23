@@ -34,5 +34,23 @@
             "value": "one"
         },
         "type": "color"
+    },
+    "orange": {
+        "color": {
+            "value": "f0c997ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "red": {
+        "color": {
+            "value": "a31414ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
     }
 }

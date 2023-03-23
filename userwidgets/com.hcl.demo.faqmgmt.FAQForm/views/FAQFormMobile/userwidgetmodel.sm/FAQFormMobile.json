@@ -36,7 +36,11 @@
     "canUpdateUI": true,
     "children": [
         "mainHeader",
-        "hamburgerMenu"
+        "flxContent",
+        "hamburgerMenu",
+        "flxMask",
+        "listSelector",
+        "editQuestion"
     ],
     "clipbounds": false,
     "containerweight": 100,

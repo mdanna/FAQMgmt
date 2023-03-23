@@ -3,10 +3,10 @@ define(function() {
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
       eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item}) => {
-        if(listKey === this.view.id){
+        if(listKey === this.listKey){
           voltmx.timer.schedule('timerSelectList', () => {
             this.view.isVisible = false;
-          }, 0.3, false);
+          }, 0.25, false);
         }
       });
       this.view.preShow = () => {
@@ -20,22 +20,28 @@ define(function() {
 
     },
     //Logic for getters/setters of custom properties
-    initGettersSetters: function() {},
+    initGettersSetters: function() {
+      defineGetter(this, 'listKey', () => {
+        return this._listKey;
+      });
+      defineSetter(this, 'listKey', value => {
+        this._listKey = value;
+      });
+    },
 
     setItems(items, selection){
-      const listKey = this.view.id;
       this.view.flxList.removeAll();
       items = items || [];
       items.forEach((item) => {
         const listSelectorItem = new com.hcl.demo.faqmgmt.ListSelectorItem({
           id: `item${new Date().valueOf()}`
         }, {}, {});
-        listSelectorItem.listKey = listKey;
+        listSelectorItem.listKey = this.listKey;
         listSelectorItem.item = item;
         listSelectorItem.selected = item === selection;
         listSelectorItem.onClickItem = () => {
           eventManager.publish(globals.EVT_SELECT_LIST, {
-            listKey,
+            listKey: this.listKey,
             item
           });
         };

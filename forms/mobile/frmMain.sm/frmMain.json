@@ -18,7 +18,7 @@
     "_pxMenuIndex": [
         0,
         1,
-        1
+        2
     ],
     "_skin_": "s011163dac3e410c8c85b4d6d0ef05bd",
     "_title_": null,
@@ -36,6 +36,7 @@
             "windowSoftInputMode": 1
         }
     },
+    "bounces": false,
     "canUpdateUI": true,
     "children": [
         "mainFormMobile"
@@ -54,6 +55,7 @@
     "device": "iPhone13ProMax",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "enablescrolling": false,
     "id": "frmMain",
     "info": null,
     "initdone": false,

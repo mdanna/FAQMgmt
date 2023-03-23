@@ -45,6 +45,11 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 6,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s89d0c7ae5d4411384b599e1fdeea09e"
+        }
+    },
     "id": "lblChangeLanguage",
     "info": null,
     "ipad": {

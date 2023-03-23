@@ -39,7 +39,10 @@
         "flxContent",
         "flxButton",
         "hamburgerMenu",
-        "categorySelector"
+        "flxMask",
+        "addQuestion",
+        "categorySelector",
+        "viewFaq"
     ],
     "clipbounds": false,
     "containerweight": 100,

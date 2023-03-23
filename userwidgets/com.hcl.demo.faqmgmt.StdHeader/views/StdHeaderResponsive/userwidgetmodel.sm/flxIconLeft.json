@@ -43,7 +43,11 @@
     ],
     "clipbounds": false,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {}
+    },
     "enablescrolling": true,
+    "hoverskin": "",
     "id": "flxIconLeft",
     "info": null,
     "iscustomlayout": false,
@@ -55,6 +59,12 @@
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b1": {
+            "desktopweb": {
+                "psp": {
+                    "hoverSkin": "s6c1ca88564c4422867b3a085ca30a04"
+                }
+            },
+            "disabledSkins": {},
             "isVisible": false
         },
         "b2": {

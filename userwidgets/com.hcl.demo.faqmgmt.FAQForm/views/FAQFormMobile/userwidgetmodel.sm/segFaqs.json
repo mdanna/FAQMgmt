@@ -1,0 +1,421 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_bounces_": false,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "5"
+    },
+    "_top_": {
+        "type": "string",
+        "value": "90dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "desktop": {
+        "_data_": [
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Answer"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "bot_laptop.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Question"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            }
+        ],
+        "rowTemplateId": "b2be703b161444fb99fa7459d5bbd6e4",
+        "rowtemplate": "Flex0c0e9faf36cf649",
+        "widgetdatamap": {
+            "answer": "answer",
+            "category": "category",
+            "flxBottom": "flxBottom",
+            "flxContentArea": "flxContentArea",
+            "flxFaqData": "flxFaqData",
+            "flxFaqs": "flxFaqs",
+            "flxMiddle": "flxMiddle",
+            "flxTop": "flxTop",
+            "img": "img",
+            "question": "question",
+            "status": "status"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segFaqs",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e5ef9c18d11540fab2592872f85e467d",
+    "masterdata": {},
+    "mobile": {
+        "_data_": [
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            {
+                "answer": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample answer ......"
+                },
+                "category": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Category"
+                },
+                "img": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "question": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                },
+                "status": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            }
+        ],
+        "rowTemplateId": "e5e1fa0cb5444efaba0c4232d7cf7596",
+        "rowtemplate": "flxFaqs",
+        "widgetdatamap": {
+            "answer": "answer",
+            "category": "category",
+            "flxBottom": "flxBottom",
+            "flxContentArea": "flxContentArea",
+            "flxFaqData": "flxFaqData",
+            "flxFaqs": "flxFaqs",
+            "flxMiddle": "flxMiddle",
+            "flxTop": "flxTop",
+            "img": "img",
+            "question": "question",
+            "status": "status"
+        }
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxContent",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {},
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "right": {
+                "type": "number",
+                "value": "5"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 9,
+    "rowfocusskin": "s4a21b17b6b54728b510141f0afb8230",
+    "rowskin": "sc4f4fa235114b0a8fecf734db41d7ce",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s8bc78dab7a2476880a3085adc18cb72",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "answer": "answer",
+        "category": "category",
+        "flxBottom": "flxBottom",
+        "flxContentArea": "flxContentArea",
+        "flxFaqData": "flxFaqData",
+        "flxFaqs": "flxFaqs",
+        "flxMiddle": "flxMiddle",
+        "flxTop": "flxTop",
+        "img": "img",
+        "question": "question",
+        "status": "status"
+    },
+    "zindex": 1
+}

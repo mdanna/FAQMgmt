@@ -37,8 +37,8 @@
     ],
     "containerweight": 100,
     "currentBreakpoint": {
-        "kuid": "b1",
-        "width": 1366
+        "kuid": "b2",
+        "width": 1024
     },
     "currentLocale": "default",
     "device": "desktopweb",
@@ -71,7 +71,7 @@
     "titlebar": true,
     "type": 3,
     "vizProps": {
-        "globalRespDesignEnabled": false
+        "globalRespDesignEnabled": true
     },
     "wType": "Form"
 }

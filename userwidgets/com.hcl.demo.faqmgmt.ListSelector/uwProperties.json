@@ -31,7 +31,25 @@
             "widgets": []
         },
         "properties": {
-            "custom": [],
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "c468d664b223459990d848cfa0e94c98",
+                    "originalPropertyKey": "listKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "listKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "listKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ic2b0417ed5b44c3aab4f69928c62f5a",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
             "passthrough": []
         },
         "widgets": {

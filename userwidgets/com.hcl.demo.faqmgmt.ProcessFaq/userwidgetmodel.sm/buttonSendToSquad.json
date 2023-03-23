@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "sa5aae637c7240e68bf6f7e2586732ad",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "49%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "label": "Send to Squad"
+    },
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sb650561f78d4c85a0838a4aeaceb9fb"
+        }
+    },
+    "disabledSkins": {},
+    "hoverskin": "",
+    "id": "buttonSendToSquad",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "de9fc24a4db044af8688c41459aaa2d2",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxButtonSubmitted",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "disabledSkins": {}
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "a73e7f2e74ef403ea012c243e70f8501",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

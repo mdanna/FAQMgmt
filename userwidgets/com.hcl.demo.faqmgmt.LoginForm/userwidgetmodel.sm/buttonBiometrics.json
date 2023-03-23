@@ -36,6 +36,12 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {},
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "se5bad81a265434a9c68dc269350164f"
+        }
+    },
+    "disabledSkins": {},
     "id": "buttonBiometrics",
     "info": null,
     "iscustomlayout": false,

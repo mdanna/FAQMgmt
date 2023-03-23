@@ -1,0 +1,143 @@
+{
+    "classname": "EditAnswer",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i1c2bbd27b0c4cf6960753669d1be39e",
+                    "paramList": [],
+                    "propertyKey": "toggle",
+                    "pw": {
+                        "displayName": "toggle",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j3776e044a244ca4b3a8cf1e3dadff78",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "i02b665d52314a2dbd5d2e382e8b362c",
+                    "originalPropertyKey": "status",
+                    "propertyIndex": 4,
+                    "propertyKey": "status",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j3776e044a244ca4b3a8cf1e3dadff78",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e0df7e729ce5429d8f375cd65a7b8381",
+                    "originalPropertyKey": "faqId",
+                    "propertyIndex": 5,
+                    "propertyKey": "faqId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "faqId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j3776e044a244ca4b3a8cf1e3dadff78",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "df498fed5a8244e781f8e507077de025",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "category",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "category",
+                        "isHiddenInTool": false,
+                        "srcWidget": "fieldCategory",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "i5dcb80135fd42babc9d39311dc511b7"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d33bd6be837349f1b4c7a7f6a5ba759f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "question",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "question",
+                        "isHiddenInTool": false,
+                        "srcWidget": "fieldQuestion",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "i9cdede38ba74b09abee76862766d344"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c19563c63e37416dbc815906dcdc8801",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "answer",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "answer",
+                        "isHiddenInTool": false,
+                        "srcWidget": "CopyfieldQuestion0ied1d15cdb7e46",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textarea",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "fd883cdbed8b45ec83fff22256480694"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.demo.faqmgmt",
+    "version": "1.0.0"
+}

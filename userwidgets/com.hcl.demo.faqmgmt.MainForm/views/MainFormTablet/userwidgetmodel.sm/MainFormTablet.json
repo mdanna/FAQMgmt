@@ -39,7 +39,10 @@
         "verticalMenu",
         "flxContent",
         "flxButton",
-        "categorySelector"
+        "flxMask",
+        "addQuestion",
+        "categorySelector",
+        "viewFaq"
     ],
     "clipbounds": false,
     "containerweight": 100,

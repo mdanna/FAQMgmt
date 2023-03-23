@@ -126,7 +126,17 @@
     "parent": "flxContent",
     "pf": "userwidgetmodel",
     "responsiveData": {
-        "b1": {}
+        "b1": {},
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "right": {
+                "type": "number",
+                "value": "5"
+            }
+        }
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

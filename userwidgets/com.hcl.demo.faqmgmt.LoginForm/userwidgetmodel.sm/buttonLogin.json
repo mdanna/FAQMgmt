@@ -36,6 +36,12 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {},
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sb650561f78d4c85a0838a4aeaceb9fb"
+        }
+    },
+    "disabledSkins": {},
     "id": "buttonLogin",
     "info": null,
     "iscustomlayout": false,

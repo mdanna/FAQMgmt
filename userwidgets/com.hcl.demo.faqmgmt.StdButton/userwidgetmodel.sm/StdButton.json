@@ -39,6 +39,11 @@
     ],
     "clipbounds": false,
     "containerweight": 100,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sb650561f78d4c85a0838a4aeaceb9fb"
+        }
+    },
     "enablescrolling": true,
     "id": "StdButton",
     "info": null,

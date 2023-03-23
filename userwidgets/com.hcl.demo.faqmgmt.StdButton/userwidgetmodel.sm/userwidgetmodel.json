@@ -31,12 +31,13 @@
         }
     },
     "canUpdateUI": true,
+    "canvasWidth": 1200,
     "children": [
         "StdButton"
     ],
     "containerweight": 100,
     "currentLocale": "default",
-    "device": "iPhone13ProMax",
+    "device": "desktopweb",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "userwidgetmodel",
@@ -57,9 +58,9 @@
         "formTransition": "None"
     },
     "paddinginpixel": false,
-    "platform": "iphone",
+    "platform": "desktopweb",
     "prevDevice": "iPhone13ProMax",
-    "prevPlatform": "spaip",
+    "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
