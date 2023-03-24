@@ -38,12 +38,14 @@
         "mainHeader",
         "verticalMenu",
         "flxContent",
+        "flxButton",
         "hamburgerMenu",
         "flxMask",
         "listSelector",
         "editQuestion",
         "processFaq",
-        "editAnswer"
+        "editAnswer",
+        "addQuestion"
     ],
     "clipbounds": false,
     "containerweight": 100,

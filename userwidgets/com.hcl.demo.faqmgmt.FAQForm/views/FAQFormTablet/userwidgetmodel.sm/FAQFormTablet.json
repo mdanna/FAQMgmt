@@ -38,8 +38,13 @@
         "mainHeader",
         "verticalMenu",
         "flxContent",
+        "flxButton",
         "flxMask",
-        "listSelector"
+        "listSelector",
+        "editQuestion",
+        "processFaq",
+        "editAnswer",
+        "addQuestion"
     ],
     "clipbounds": false,
     "containerweight": 100,

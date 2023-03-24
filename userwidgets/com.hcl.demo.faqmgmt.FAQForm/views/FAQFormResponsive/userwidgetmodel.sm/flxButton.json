@@ -47,11 +47,11 @@
     "id": "flxButton",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "je04c8194eaf4fbeaf3ba91297e429a9",
+    "isvisible": true,
+    "kuid": "f76c4527c4104b58a7a7a1caea21c5b1",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "MainFormResponsive",
+    "parent": "FAQFormResponsive",
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b1": {

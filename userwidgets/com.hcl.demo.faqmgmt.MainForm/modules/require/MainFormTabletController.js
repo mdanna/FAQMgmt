@@ -44,6 +44,14 @@ define(function() {
 
           this.view.buttonAdd.onClickButton = () => this.view.addQuestion.toggle(true, false);
           
+          this.view.segFaqs.onRowClick = () => {
+            const selection = this.view.segFaqs.selectedRowItems[0];
+            this.view.viewFaq.category = selection.category;
+            this.view.viewFaq.question = selection.question;
+            this.view.viewFaq.answer = selection.answer;
+            this.view.viewFaq.toggle(true, false);
+          };
+
           this.initDone = true;
         }
 

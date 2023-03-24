@@ -1,16 +1,18 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "_bottom_": {
-        "type": "number",
-        "value": "0"
-    },
-    "_height_": {
         "type": "string",
-        "value": "100dp"
+        "value": "-100%"
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "255dp"
     },
     "_margin_": [
         0,
@@ -18,7 +20,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -28,54 +30,60 @@
     "_percent_": true,
     "_right_": {
         "type": "number",
-        "value": ""
+        "value": "5"
     },
     "_skin_": "s995e9fe286c4b15a198585b07f64cec",
-    "_width_": {
+    "_top_": {
         "type": "string",
-        "value": "100%"
+        "value": ""
     },
-    "allboxes": [],
-    "autogrowmode": 0,
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
     "canUpdateUI": true,
-    "children": [
-        "buttonAdd"
-    ],
-    "clipbounds": false,
-    "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxButton",
+    "containerweight": 0,
+    "data": {},
+    "id": "editQuestion",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "je04c8194eaf4fbeaf3ba91297e429a9",
-    "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "MainFormResponsive",
+    "isvisible": true,
+    "kuid": "f2b9273da2b04d268a3f326294ba926e",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "FAQFormTablet",
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b1": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
             "left": {
                 "type": "string",
-                "value": "250dp"
+                "value": "255dp"
             },
-            "right": {
+            "top": {
                 "type": "string",
                 "value": ""
             },
             "width": {
                 "type": "string",
-                "value": "750dp"
+                "value": "740dp"
             }
         },
         "b2": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
             "left": {
                 "type": "string",
-                "value": "250dp"
+                "value": "255dp"
             },
             "right": {
-                "type": "string",
-                "value": "0dp"
+                "type": "number",
+                "value": "5"
             },
             "width": {
                 "type": "ref",
@@ -86,9 +94,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
+    "sourceUserWidget": "fe928d264a7245e6b885c5710ac37740",
+    "wType": "UserWidgetInstance",
     "zindex": 1
 }

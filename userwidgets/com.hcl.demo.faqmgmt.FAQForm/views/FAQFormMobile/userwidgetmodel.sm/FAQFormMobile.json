@@ -37,10 +37,14 @@
     "children": [
         "mainHeader",
         "flxContent",
+        "flxButton",
         "hamburgerMenu",
         "flxMask",
         "listSelector",
-        "editQuestion"
+        "editQuestion",
+        "processFaq",
+        "editAnswer",
+        "addQuestion"
     ],
     "clipbounds": false,
     "containerweight": 100,

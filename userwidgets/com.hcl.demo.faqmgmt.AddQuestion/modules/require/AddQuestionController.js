@@ -26,6 +26,7 @@ define(function() {
                 "dataObject": dataObject
               }, (response) => {
                 this.toggle(false, false);
+                eventManager.publish(globals.EVT_RELOAD_FAQ_LIST);
                 voltmx.print("Record created: " + JSON.stringify(response));
                 alert('Question submitted successfully.');
               }, (error) => {

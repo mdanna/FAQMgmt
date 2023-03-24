@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "string",
-        "value": "-1000%"
+        "value": "-100%"
     },
     "_children_": [],
     "_height_": {
@@ -32,7 +32,7 @@
         "type": "number",
         "value": ""
     },
-    "_skin_": "s995e9fe286c4b15a198585b07f64cec",
+    "_skin_": "s7eb90fd19c7468ab97a60ac36a50e1e",
     "_width_": {
         "type": "string",
         "value": "98%"
@@ -44,53 +44,72 @@
     },
     "containerweight": 0,
     "data": {},
-    "id": "processFaq",
+    "id": "addQuestion",
     "info": null,
     "iscustomlayout": false,
     "isvisible": false,
-    "kuid": "b335db004b3044deaf82161eb1691396",
+    "kuid": "g59c2531dfc64c708ef2134aaee7487a",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
     "parent": "FAQFormResponsive",
     "pf": "userwidgetmodel",
     "responsiveData": {
         "b1": {
+            "bottom": {
+                "type": "string",
+                "value": "-100%"
+            },
             "centerX": {
                 "type": "string",
                 "value": ""
             },
+            "isVisible": false,
             "left": {
                 "type": "string",
                 "value": "255dp"
             },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "skin": "s995e9fe286c4b15a198585b07f64cec",
             "width": {
                 "type": "string",
                 "value": "740dp"
             }
         },
         "b2": {
+            "bottom": {
+                "type": "string",
+                "value": "-100%"
+            },
             "centerX": {
                 "type": "string",
                 "value": ""
             },
+            "isVisible": false,
             "left": {
                 "type": "string",
                 "value": "255dp"
             },
             "right": {
-                "type": "number",
-                "value": "5"
+                "type": "string",
+                "value": "5dp"
             },
+            "skin": "s995e9fe286c4b15a198585b07f64cec",
             "width": {
                 "type": "ref",
                 "value": "preferred"
             }
+        },
+        "b3": {
+            "skin": "s995e9fe286c4b15a198585b07f64cec"
         }
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "b601763af977421f9a5cf2b990715d2d",
+    "sourceUserWidget": "j29af3d3f5b443efac85234da2c30d55",
     "wType": "UserWidgetInstance",
-    "zindex": 1
+    "zindex": 50
 }

@@ -18,6 +18,10 @@ define(function() {
           this.view.listSelector.listKey = listKey;
           this.view.listSelector.setItems([...globals.categories], this.view.editQuestion.category);
           this.view.listSelector.isVisible = true;
+        } else if(listKey === globals.ADD_QUESTION_CATEGORY_SELECTOR){
+          this.view.listSelector.listKey = listKey;
+          this.view.listSelector.setItems([...globals.categories], this.view.addQuestion.category);
+          this.view.listSelector.isVisible = true;
         }
       });
 
@@ -27,6 +31,8 @@ define(function() {
           this.loadData(item);
         } else if(listKey === globals.EDIT_QUESTION_CATEGORY_SELECTOR){
           this.view.editQuestion.category = item;
+        } else if(listKey === globals.ADD_QUESTION_CATEGORY_SELECTOR){
+          this.view.addQuestion.category = item;
         }
       });
 
@@ -39,6 +45,8 @@ define(function() {
           this.view.hamburgerMenu.onItemSelected = (itemKey) => faqFormCommon.onItemSelected(itemKey);
           this.view.verticalMenu.onItemSelected = (itemKey) => faqFormCommon.onItemSelected(itemKey);
 
+          this.view.buttonAdd.onClickButton = () => this.view.addQuestion.toggle(true, false);
+          
           this.view.flxStep.onClick = () => {
             this.view.listSelector.listKey = globals.FILTER_STEP_SELECTOR;
             this.view.listSelector.setItems(globals.ALL_STEPS, this.view.lblStep.text);

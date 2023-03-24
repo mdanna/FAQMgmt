@@ -47,7 +47,7 @@
     "id": "flxButton",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "i7d9bd0d204845a8b9e6d8f8d63f4657",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

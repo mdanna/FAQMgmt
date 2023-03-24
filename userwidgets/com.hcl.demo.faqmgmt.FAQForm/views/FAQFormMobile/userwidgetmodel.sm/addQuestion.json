@@ -29,10 +29,6 @@
     ],
     "_percent_": true,
     "_skin_": "s995e9fe286c4b15a198585b07f64cec",
-    "_top_": {
-        "type": "string",
-        "value": ""
-    },
     "_width_": {
         "type": "string",
         "value": "98%"
@@ -44,57 +40,19 @@
     },
     "containerweight": 0,
     "data": {},
-    "id": "editQuestion",
+    "id": "addQuestion",
     "info": null,
     "iscustomlayout": false,
     "isvisible": false,
-    "kuid": "ade25e77a384418db6f95b9317e797a1",
+    "kuid": "g167008b10d94d5eb1fb36aad2b3bffb",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
     "parent": "FAQFormMobile",
     "pf": "userwidgetmodel",
-    "responsiveData": {
-        "b1": {
-            "centerX": {
-                "type": "string",
-                "value": ""
-            },
-            "left": {
-                "type": "string",
-                "value": "255dp"
-            },
-            "top": {
-                "type": "string",
-                "value": ""
-            },
-            "width": {
-                "type": "string",
-                "value": "740dp"
-            }
-        },
-        "b2": {
-            "centerX": {
-                "type": "string",
-                "value": ""
-            },
-            "left": {
-                "type": "string",
-                "value": "255dp"
-            },
-            "right": {
-                "type": "number",
-                "value": "5"
-            },
-            "width": {
-                "type": "ref",
-                "value": "preferred"
-            }
-        }
-    },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "fe928d264a7245e6b885c5710ac37740",
+    "sourceUserWidget": "j29af3d3f5b443efac85234da2c30d55",
     "wType": "UserWidgetInstance",
-    "zindex": 1
+    "zindex": 50
 }

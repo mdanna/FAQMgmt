@@ -11,7 +11,8 @@ define(function() {
           this.view.buttonSendToSquad.onClickButton = () => this.update(globals.STEP_SQUAD_REVIEW);
           this.view.buttonRejectAnswer.onClickButton = () => this.update(globals.STEP_ANSWER_REJECTED);
           this.view.buttonSendToLeap.onClickButton = () => {
-            this.update(globals.STEP_APPROVED);
+            //this.update(globals.STEP_APPROVED);
+            this.sendToLeap();
           };
 
           this.initDone = true;
@@ -94,7 +95,6 @@ define(function() {
       objSvc.update({
         "dataObject": dataObject
       }, (response) => {
-        
         this.toggle(false, false);
         voltmx.print("Record updated: " + JSON.stringify(response));
         eventManager.publish(globals.EVT_RELOAD_FAQ_LIST);
@@ -104,6 +104,26 @@ define(function() {
         this.toggle(false, false);
         alert(error.message);
       });
-    }    
+    },
+    
+    sendToLeap() {
+      VMXFoundry.getIntegrationService("LEAP_FAQmgt").invokeOperation("create_submission_record", {}, {
+        "access-type": "anon",
+        "pressedButton": "S_Submit",
+        "F_Category": this.category,
+        "F_Title": this.question,
+        "F_Description": this.answer,
+        "F_PictureURL_txt": globals.DEFAULT_THUMBNAIL,
+        "F_QuestionUserName": globals.user_profile.firstname,
+        "F_QuestionUserEmail": globals.user_profile.email,
+        "F_AnswerUserName": globals.user_profile.firstname,
+        "F_AnswerUserEmail": globals.user_profile.email
+      }, (response) => {
+        voltmx.print(JSON.stringify(response));
+      }, (error) => {
+        voltmx.print(JSON.stringify(error));
+        alert(error.message);
+      });
+    }
   };
 });
