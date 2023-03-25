@@ -37,10 +37,8 @@
     "children": [
         "mainHeader",
         "flxContent",
-        "flxButton",
         "hamburgerMenu",
         "flxMask",
-        "addQuestion",
         "categorySelector",
         "viewFaq"
     ],

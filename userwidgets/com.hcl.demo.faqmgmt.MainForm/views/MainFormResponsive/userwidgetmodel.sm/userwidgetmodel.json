@@ -37,8 +37,8 @@
     ],
     "containerweight": 100,
     "currentBreakpoint": {
-        "kuid": "b3",
-        "width": 640
+        "kuid": "b2",
+        "width": 1024
     },
     "currentLocale": "default",
     "device": "desktopweb",

@@ -89,7 +89,7 @@ define(function() {
           this.initDone = true;
         }
 
-        this.loadData('All');
+        this.loadData(this.view.lblStep.text || 'All');
       };
     },
     initGettersSetters: function() {},

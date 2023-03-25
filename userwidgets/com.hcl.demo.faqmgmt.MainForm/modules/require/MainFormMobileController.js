@@ -11,14 +11,6 @@ define(function() {
         }
       });
 
-      eventManager.subscribe(globals.EVT_OPEN_SELECTOR, (listKey) => {
-        if(listKey === globals.ADD_QUESTION_CATEGORY_SELECTOR){
-          this.view.categorySelector.listKey = listKey;
-          this.view.categorySelector.setItems([...globals.categories], this.view.addQuestion.category);
-          this.view.categorySelector.isVisible = true;
-        }
-      });
-
       eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item}) => {
         if(listKey === globals.FILTER_CATEGORY_SELECTOR){
           this.filterCategory = item;
@@ -26,8 +18,6 @@ define(function() {
           mainFormCommon.getFaqs(item === 'All' ? '' : item).then((faqs) => {
             this.view.segFaqs.setData(faqs);
           }).catch((error) => alert(JSON.stringify(error)));
-        } else if(listKey === globals.ADD_QUESTION_CATEGORY_SELECTOR){
-          this.view.addQuestion.category = item;
         }
       });
 
@@ -44,8 +34,6 @@ define(function() {
             this.view.categorySelector.isVisible = true;
           };
 
-          this.view.buttonAdd.onClickButton = () => this.view.addQuestion.toggle(true, false);
-
           this.view.segFaqs.onRowClick = () => {
             const selection = this.view.segFaqs.selectedRowItems[0];
             this.view.viewFaq.category = selection.category;
@@ -57,11 +45,17 @@ define(function() {
           this.initDone = true;
         }
 
-        mainFormCommon.getData().then(({categories, faqs}) => {
-          globals.categories = categories;
-          this.view.categorySelector.setItems(['All', ...categories], 'All');
-          this.view.segFaqs.setData(faqs);
-        }).catch((error) => alert(JSON.stringify(error)));
+        if(this.filterCategory !== 'All'){
+          mainFormCommon.getFaqs(this.filterCategory).then((faqs) => {
+            this.view.segFaqs.setData(faqs);
+          }).catch((error) => alert(JSON.stringify(error)));
+        } else {
+          mainFormCommon.getData().then(({categories, faqs}) => {
+            globals.categories = categories;
+            this.view.categorySelector.setItems(['All', ...categories], 'All');
+            this.view.segFaqs.setData(faqs);
+          }).catch((error) => alert(JSON.stringify(error)));
+        }
 
       };
     },

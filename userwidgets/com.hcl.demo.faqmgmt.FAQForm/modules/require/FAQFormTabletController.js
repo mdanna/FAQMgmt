@@ -8,7 +8,7 @@ define(function() {
           this.view.flxMask.isVisible = mask;
         }
       });
-      
+
       eventManager.subscribe(globals.EVT_RELOAD_FAQ_LIST, () => {
         this.loadData(this.view.lblStep.text);
       });
@@ -35,20 +35,20 @@ define(function() {
           this.view.addQuestion.category = item;
         }
       });
-      
+
       this.view.preShow = () => {
         if(!this.initDone){
-          
+
           this.view.verticalMenu.onItemSelected = (itemKey) => faqFormCommon.onItemSelected(itemKey);
-          
+
           this.view.flxStep.onClick = () => {
             this.view.listSelector.listKey = globals.FILTER_STEP_SELECTOR;
             this.view.listSelector.setItems(globals.ALL_STEPS, this.view.lblStep.text);
             this.view.listSelector.isVisible = true;
           };
-          
+
           this.view.buttonAdd.onClickButton = () => this.view.addQuestion.toggle(true, false);
-          
+
           this.view.segFaqs.onRowClick = () => {
             const selection = this.view.segFaqs.selectedRowItems[0];
             switch(selection.status) {
@@ -84,11 +84,11 @@ define(function() {
           this.initDone = true;
         }
       };
-        
-        this.loadData('All');
+
+      this.loadData(this.view.lblStep.text || 'All');
     },
     initGettersSetters: function() {},
-    
+
     loadData(step){
       faqFormCommon.getFaqs(step).then((faqs) => {
         this.view.segFaqs.setData(faqs);

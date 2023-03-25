@@ -38,10 +38,6 @@
         "value": "preferred"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 0,
     "data": {},
     "id": "viewFaq",

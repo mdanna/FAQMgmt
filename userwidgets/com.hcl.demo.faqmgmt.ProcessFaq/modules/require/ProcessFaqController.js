@@ -11,7 +11,6 @@ define(function() {
           this.view.buttonSendToSquad.onClickButton = () => this.update(globals.STEP_SQUAD_REVIEW);
           this.view.buttonRejectAnswer.onClickButton = () => this.update(globals.STEP_ANSWER_REJECTED);
           this.view.buttonSendToLeap.onClickButton = () => {
-            //this.update(globals.STEP_APPROVED);
             this.sendToLeap();
           };
 
@@ -108,6 +107,8 @@ define(function() {
     
     sendToLeap() {
       VMXFoundry.getIntegrationService("LEAP_FAQmgt").invokeOperation("create_submission_record", {}, {
+        "userid": "",
+        "pwd": "",
         "access-type": "anon",
         "pressedButton": "S_Submit",
         "F_Category": this.category,
@@ -120,6 +121,7 @@ define(function() {
         "F_AnswerUserEmail": globals.user_profile.email
       }, (response) => {
         voltmx.print(JSON.stringify(response));
+        this.update(globals.STEP_APPROVED);
       }, (error) => {
         voltmx.print(JSON.stringify(error));
         alert(error.message);

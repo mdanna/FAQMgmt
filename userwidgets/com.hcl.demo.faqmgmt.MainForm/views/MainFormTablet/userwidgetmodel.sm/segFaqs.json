@@ -374,6 +374,7 @@
         ],
         "rowTemplateId": "h5246c4e19ed44e28b04d30027bc72dc",
         "rowtemplate": "flxFaqs",
+        "sectionHeaderTemplateId": null,
         "widgetdatamap": {
             "answer": "answer",
             "category": "category",
