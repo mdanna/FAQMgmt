@@ -26,7 +26,7 @@
         "value": "0"
     },
     "_skin_": "s54516533c2e412494450f47990ea9b8",
-    "_text_": "This is a sample question long enough to span on two rows and see how it looks like ?",
+    "_text_": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -43,11 +43,15 @@
         }
     },
     "canUpdateUI": true,
-    "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
     "id": "question",
     "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
     "iphone": {
         "psp": {
             "wrapping": 2
@@ -55,10 +59,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bb78bf0770a849f7b51ecb05eee95e47",
+    "kuid": "ifa4af097da34788afa4f435ba0c43d0",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "flxMiddle",
+    "parent": "flxAnswer",
     "pf": "tplFaqs",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

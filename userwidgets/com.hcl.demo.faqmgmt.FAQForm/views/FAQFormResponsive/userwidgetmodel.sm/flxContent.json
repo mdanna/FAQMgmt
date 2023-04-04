@@ -46,7 +46,7 @@
         "value": ""
     },
     "children": [
-        "flxFilterStep",
+        "filterStep",
         "segFaqs"
     ],
     "clipbounds": false,

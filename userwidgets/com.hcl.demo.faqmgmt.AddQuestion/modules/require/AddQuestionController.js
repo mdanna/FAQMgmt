@@ -28,15 +28,27 @@ define(function() {
                 this.toggle(false, false);
                 eventManager.publish(globals.EVT_RELOAD_FAQ_LIST);
                 voltmx.print("Record created: " + JSON.stringify(response));
-                alert('Question submitted successfully.');
+                eventManager.publish(globals.EVT_SHOW_ALERT, {
+                  form: voltmx.application.getCurrentForm(),
+                  title: 'Info',
+                  text: 'Question submitted successfully.'
+                });
               }, (error) => {
                 voltmx.print("Error in record creation: " + JSON.stringify(error));
                 this.toggle(false, false);
-                alert(error.message);
+                eventManager.publish(globals.EVT_SHOW_ALERT, {
+                  form: voltmx.application.getCurrentForm(),
+                  title: 'Error',
+                  text: error.message
+                });
               });
 
             } else {
-              alert("Category and Question are required.");
+                eventManager.publish(globals.EVT_SHOW_ALERT, {
+                  form: voltmx.application.getCurrentForm(),
+                  title: 'Warning',
+                  text: 'Fields Category and Question are required.'
+                });
             }
           };
 

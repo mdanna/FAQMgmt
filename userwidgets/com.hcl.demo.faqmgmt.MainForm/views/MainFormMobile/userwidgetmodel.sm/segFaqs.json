@@ -45,7 +45,7 @@
     },
     "_top_": {
         "type": "string",
-        "value": "90dp"
+        "value": "120dp"
     },
     "_width_": {
         "type": "ref",
@@ -54,14 +54,10 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "09",
+    "counter": "00",
     "desktop": {
         "_data_": [
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Answer"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -83,13 +79,11 @@
         "rowTemplateId": "b2be703b161444fb99fa7459d5bbd6e4",
         "rowtemplate": "Flex0c0e9faf36cf649",
         "widgetdatamap": {
-            "answer": "answer",
             "category": "category",
-            "flxBottom": "flxBottom",
+            "flxAnswer": "flxAnswer",
             "flxContentArea": "flxContentArea",
             "flxFaqData": "flxFaqData",
             "flxFaqs": "flxFaqs",
-            "flxMiddle": "flxMiddle",
             "flxTop": "flxTop",
             "img": "img",
             "question": "question",
@@ -119,236 +113,32 @@
     "mobile": {
         "_data_": [
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
+                    "text": "Loading..."
                 },
                 "img": {
                     "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
+                    "src": "bot_magnifier.png"
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "Loading..."
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
-                }
-            },
-            {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
-                "category": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
-                },
-                "img": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "imagedrag.png"
-                },
-                "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
+                    "text": "Loading..."
                 }
             }
         ],
         "rowTemplateId": "e5e1fa0cb5444efaba0c4232d7cf7596",
         "rowtemplate": "flxFaqs",
         "widgetdatamap": {
-            "answer": "answer",
             "category": "category",
-            "flxBottom": "flxBottom",
+            "flxAnswer": "flxAnswer",
             "flxContentArea": "flxContentArea",
             "flxFaqData": "flxFaqData",
             "flxFaqs": "flxFaqs",
-            "flxMiddle": "flxMiddle",
             "flxTop": "flxTop",
             "img": "img",
             "question": "question",
@@ -370,7 +160,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
-    "rowcounter": 9,
+    "rowcounter": 0,
     "rowfocusskin": "s4a21b17b6b54728b510141f0afb8230",
     "rowskin": "sc4f4fa235114b0a8fecf734db41d7ce",
     "rowtemplate": null,
@@ -391,10 +181,6 @@
     "tablet": {
         "_data_": [
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -405,7 +191,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -413,10 +199,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -427,7 +209,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -435,10 +217,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -449,7 +227,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -457,10 +235,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -471,7 +245,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -479,10 +253,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -493,7 +263,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -501,10 +271,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -515,7 +281,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -523,10 +289,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -537,7 +299,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -545,10 +307,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -559,7 +317,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -567,10 +325,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -581,7 +335,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -589,10 +343,6 @@
                 }
             },
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample answer ......"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
@@ -603,7 +353,7 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "This is a sample question long enough to span on two rows and see how it looks like ?"
+                    "text": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?"
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -614,13 +364,11 @@
         "rowTemplateId": "h5246c4e19ed44e28b04d30027bc72dc",
         "rowtemplate": "flxFaqs",
         "widgetdatamap": {
-            "answer": "answer",
             "category": "category",
-            "flxBottom": "flxBottom",
+            "flxAnswer": "flxAnswer",
             "flxContentArea": "flxContentArea",
             "flxFaqData": "flxFaqData",
             "flxFaqs": "flxFaqs",
-            "flxMiddle": "flxMiddle",
             "flxTop": "flxTop",
             "img": "img",
             "question": "question",

@@ -39,8 +39,9 @@
         "flxContent",
         "hamburgerMenu",
         "flxMask",
-        "categorySelector",
-        "viewFaq"
+        "listSelector",
+        "viewFaq",
+        "popupAlert"
     ],
     "clipbounds": false,
     "containerweight": 100,

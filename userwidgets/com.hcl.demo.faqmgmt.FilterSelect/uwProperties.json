@@ -1,0 +1,90 @@
+{
+    "classname": "FilterSelect",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "d6a7a03073764aea8bdb59da3e595dbc",
+                    "originalPropertyKey": "listKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "listKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "listKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a61c49690f704c41b9d9312c925951f1",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i972dc3f80b94e20810051aaec717f15",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "label",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblFilterLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "de62e7dc70ff4973acb41099dee3ed2f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ed02bf591af94bbba631695ec9d005fb",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "selection",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "selection",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblSelection",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bfb378a050244a1797d39e5f4bf1efed"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.demo.faqmgmt",
+    "version": "1.0.0"
+}

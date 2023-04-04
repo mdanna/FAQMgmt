@@ -13,7 +13,11 @@ define(function() {
             if(category && question && this.faqId){
               this.update(category, question);
             } else {
-              alert("Category and Question are required.");
+              eventManager.publish(globals.EVT_SHOW_ALERT, {
+                form: voltmx.application.getCurrentForm(),
+                title: 'Warning',
+                text: "Fields Category and Question are required."
+              });
             }
           };
 
@@ -93,11 +97,14 @@ define(function() {
         this.toggle(false, false);
         voltmx.print("Record updated: " + JSON.stringify(response));
         eventManager.publish(globals.EVT_RELOAD_FAQ_LIST);
-        alert('Question submitted successfully.');
       }, (error) => {
         voltmx.print("Error while updating record: " + JSON.stringify(error));
         this.toggle(false, false);
-        alert(error.message);
+        eventManager.publish(globals.EVT_SHOW_ALERT, {
+          form: voltmx.application.getCurrentForm(),
+          title: 'Error',
+          text: error.message
+        });
       });
 
     }

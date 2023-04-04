@@ -15,10 +15,7 @@ define(function() {
         }
       };
     },
-    //Logic for getters/setters of custom properties
-    initGettersSetters() {
-
-    },
+    initGettersSetters() {},
 
     login(){
       const authClient = VMXFoundry.getIdentityService('DHDir');
@@ -40,11 +37,13 @@ define(function() {
           new voltmx.mvc.Navigation('frmMain'). navigate();
         }, (error) => {
           voltmx.print(error);
-          alert('Unable to fetch user profile');
+          this.view.popupAlert.text = error.message;
+          this.view.popupAlert.isVisible = true;
         });
       }, (error) => {
         voltmx.print(error);
-        alert('Unable to login');
+          this.view.popupAlert.text = error.message;
+          this.view.popupAlert.isVisible = true;
       });
     }
   };

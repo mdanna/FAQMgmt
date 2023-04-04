@@ -1,63 +1,45 @@
 define(function() {
   const mainFormCommon = require("com/hcl/demo/faqmgmt/MainForm/MainFormCommon");
   return {
-    categories: [],
     filterCategory: 'All',
+    filterStatus: globals.STATUS_APPROVED,
 
     constructor(baseConfig, layoutConfig, pspConfig) {
 
-      eventManager.subscribe(globals.EVT_MASK, ({form, mask}) => {
-        if(form === voltmx.application.getCurrentForm()){
-          this.view.flxMask.isVisible = mask;
-        }
+      eventManager.subscribe(globals.EVT_SHOW_ALERT, ({form, title, text}) => {
+        mainFormCommon.subscribeShowAlert.call(this, form, title, text);
       });
       
+      eventManager.subscribe(globals.EVT_MASK, ({form, mask}) => {
+        mainFormCommon.subscribeMask.call(this, form, mask);
+      });
+
+      eventManager.subscribe(globals.EVT_OPEN_SELECTOR, (listKey) => {
+        mainFormCommon.subscribeOpenSelector.call(this, listKey);
+      });
+
       eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item}) => {
-        if(listKey === globals.FILTER_CATEGORY_SELECTOR){
-          this.filterCategory = item;
-          this.view.lblCategory.text = item;
-          mainFormCommon.getFaqs(item === 'All' ? '' : item).then((faqs) => {
-            this.view.segFaqs.setData(faqs);
-          }).catch((error) => alert(JSON.stringify(error)));
-        }
+        mainFormCommon.subscribeSelectList.call(this, listKey, item);
       });
 
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.verticalMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected(itemKey);
 
-          this.view.flxCategory.onClick = () => {
-            this.view.categorySelector.listKey = globals.FILTER_CATEGORY_SELECTOR;
-            this.view.categorySelector.setItems(['All', ...globals.categories], this.filterCategory);
-            this.view.categorySelector.isVisible = true;
-          };
-
-          this.view.segFaqs.onRowClick = () => {
-            const selection = this.view.segFaqs.selectedRowItems[0];
-            this.view.viewFaq.category = selection.category;
-            this.view.viewFaq.question = selection.question;
-            this.view.viewFaq.answer = selection.answer;
-            this.view.viewFaq.toggle(true, false);
-          };
+          this.view.segFaqs.onRowClick = () => mainFormCommon.onRowClick.call(this);
 
           this.initDone = true;
         }
 
-        if(this.filterCategory !== 'All'){
-          mainFormCommon.getFaqs(this.filterCategory).then((faqs) => {
-            this.view.segFaqs.setData(faqs);
-          }).catch((error) => alert(JSON.stringify(error)));
-        } else {
-          mainFormCommon.getData().then(({categories, faqs}) => {
-            globals.categories = categories;
-            this.view.categorySelector.setItems(['All', ...categories], 'All');
-            this.view.segFaqs.setData(faqs);
-          }).catch((error) => alert(JSON.stringify(error)));
-        }
+        mainFormCommon.loadData.call(this);
 
       };
     },
 
-    initGettersSetters() {}
+    initGettersSetters() {},
+
+    getMainFormCommon() {
+      return mainFormCommon;
+    }
   };
 });

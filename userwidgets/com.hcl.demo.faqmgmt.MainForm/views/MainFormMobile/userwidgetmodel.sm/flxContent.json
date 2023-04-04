@@ -47,7 +47,8 @@
         "value": ""
     },
     "children": [
-        "flxFilterCategory",
+        "filterCategory",
+        "filterStatus",
         "segFaqs"
     ],
     "clipbounds": false,

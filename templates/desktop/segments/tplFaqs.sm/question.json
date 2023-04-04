@@ -26,7 +26,7 @@
         "value": "0"
     },
     "_skin_": "s54516533c2e412494450f47990ea9b8",
-    "_text_": "This is a sample question long enough to span on two rows and see how it looks like ?",
+    "_text_": "This is a sample question long enough to span on two rows sdhjsdhj hjsd jhs djh jshd jh sjdh jh sdhj js jh jshd hj jsdh jh jsdh jh jsdh jh jsdh jh sdj hjsdh jh jsd jh jsdand see how it looks like ?",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -63,7 +63,7 @@
     "kuid": "ga718c24b5854932a82592e78bc395f0",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "flxMiddle",
+    "parent": "flxAnswer",
     "pf": "tplFaqs",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

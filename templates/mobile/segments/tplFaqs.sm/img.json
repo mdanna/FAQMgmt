@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100dp"
+        "value": "80dp"
     },
     "_left_": {
         "type": "string",
@@ -30,17 +30,16 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100dp"
+        "value": "80dp"
     },
     "canUpdateUI": true,
-    "containerId": true,
     "containerweight": 100,
     "id": "img",
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "dfffcc7781f340169a51f72925ddba7d",
+    "kuid": "cee73cc0f6e54829b18de789eb863d01",
     "name": "kony.ui.Image2",
     "parent": "flxContentArea",
     "pf": "tplFaqs",

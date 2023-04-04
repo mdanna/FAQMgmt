@@ -45,7 +45,8 @@
         "editQuestion",
         "processFaq",
         "editAnswer",
-        "addQuestion"
+        "addQuestion",
+        "popupAlert"
     ],
     "clipbounds": false,
     "containerweight": 100,

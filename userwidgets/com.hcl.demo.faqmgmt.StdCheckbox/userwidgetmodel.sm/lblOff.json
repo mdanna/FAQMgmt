@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "ed5a5cd124da44acb83623d8352b64f1",
     "name": "kony.ui.Label",
-    "parent": "StdCheckbox",
+    "parent": "flxCheckboxCointainer",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

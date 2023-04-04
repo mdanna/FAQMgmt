@@ -6,11 +6,11 @@
     },
     "_height_": {
         "type": "string",
-        "value": "100dp"
+        "value": "80dp"
     },
     "_left_": {
         "type": "string",
-        "value": "120dp"
+        "value": "100dp"
     },
     "_margin_": [
         0,
@@ -44,18 +44,16 @@
     "canUpdateUI": true,
     "children": [
         "flxTop",
-        "flxMiddle",
-        "flxBottom"
+        "flxAnswer"
     ],
     "clipbounds": false,
-    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxFaqData",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ce71764caf3846f49a2f5a3ecdcc8ed6",
+    "kuid": "gf01ca41996642319862ea62ebfd53aa",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxContentArea",

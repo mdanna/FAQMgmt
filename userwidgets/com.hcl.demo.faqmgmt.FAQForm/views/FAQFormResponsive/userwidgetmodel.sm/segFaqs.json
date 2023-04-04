@@ -45,7 +45,7 @@
     },
     "_top_": {
         "type": "string",
-        "value": "90dp"
+        "value": "80dp"
     },
     "_width_": {
         "type": "ref",
@@ -58,13 +58,9 @@
     "desktop": {
         "_data_": [
             {
-                "answer": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Answer"
-                },
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Category"
+                    "text": "Loading..."
                 },
                 "img": {
                     "@class": "com.viz.ide.model.segment.ImageSegmentData",
@@ -72,24 +68,22 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Question"
+                    "text": "Loading..."
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
+                    "text": "Loading..."
                 }
             }
         ],
         "rowTemplateId": "b2be703b161444fb99fa7459d5bbd6e4",
         "rowtemplate": "Flex0c0e9faf36cf649",
         "widgetdatamap": {
-            "answer": "answer",
             "category": "category",
-            "flxBottom": "flxBottom",
+            "flxAnswer": "flxAnswer",
             "flxContentArea": "flxContentArea",
             "flxFaqData": "flxFaqData",
             "flxFaqs": "flxFaqs",
-            "flxMiddle": "flxMiddle",
             "flxTop": "flxTop",
             "img": "img",
             "question": "question",

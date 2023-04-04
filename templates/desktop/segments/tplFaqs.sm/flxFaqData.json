@@ -6,11 +6,11 @@
     },
     "_height_": {
         "type": "string",
-        "value": "100dp"
+        "value": "80dp"
     },
     "_left_": {
         "type": "string",
-        "value": "120dp"
+        "value": "100dp"
     },
     "_margin_": [
         0,
@@ -44,8 +44,7 @@
     "canUpdateUI": true,
     "children": [
         "flxTop",
-        "flxMiddle",
-        "flxBottom"
+        "flxAnswer"
     ],
     "clipbounds": false,
     "containerId": true,

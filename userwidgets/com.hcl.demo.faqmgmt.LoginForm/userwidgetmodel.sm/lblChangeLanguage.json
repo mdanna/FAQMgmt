@@ -63,7 +63,7 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b56bcb1a6614444ebdd9fed0d0e85ed4",
     "name": "kony.ui.Label",
     "parent": "flxArea",

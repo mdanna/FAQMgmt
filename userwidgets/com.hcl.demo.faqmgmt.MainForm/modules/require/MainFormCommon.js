@@ -33,24 +33,30 @@ define(function () {
       return promise;
     },
 
-    getFaqs(category){
+    getFaqs(category, status){
+      category = category === 'All' ? '' : category;
+      status = status === 'All' ? '' : status;
+
       const promise = new Promise((resolve, reject) => {
-        const operation = category ? 'FAQByCategory' : 'FAQorderStage';
         const params = {
-          stage: 'ST_Approved'
+          userid: '',
+          pwd: ''
         };
-        category && (params.category = category);
-        VMXFoundry.getIntegrationService('GetFAQLeap').invokeOperation(operation, {}, params, (response) => {
+        VMXFoundry.getIntegrationService('LEAP_FAQmgt').invokeOperation("list_submission_records", {}, params, (response) => {
           voltmx.print(response.items);
-          const faqData = response.items || [];
+          let faqData = response.items || [];
           const faqs = [];
-          faqData.forEach((faq) => faqs.push({
-            category: faq.F_Category,
-            img: faq.F_PictureURL_txt,
-            answer: faq.F_Description,
-            status: faq.flowState,
-            question: faq.F_Title
-          }));
+          category && (faqData = faqData.filter((faq) => faq.F_Category === category));
+          status && (faqData = faqData.filter((faq) => faq.flowState === status));
+          faqData.forEach((faq) => {
+            faqs.push({
+              category: faq.F_Category,
+              img: faq.F_PictureURL_txt,
+              answer: faq.F_Description,
+              status: faq.flowState,
+              question: faq.F_Title
+            });
+          });
           resolve(faqs);
         }, (error) => {
           voltmx.print(error);
@@ -62,13 +68,103 @@ define(function () {
 
     getData(){
       const promise = new Promise((resolve, reject) => {
-        Promise.all([this.getCategories(), this.getFaqs()]).then((response) => {
+        Promise.all([this.getCategories(), this.getFaqs('', globals.STATUS_APPROVED)]).then((response) => {
           resolve({categories: response[0], faqs: response[1]});
         }).catch((error) => {
           reject(error);
         });
       });
       return promise;
+    },
+
+    subscribeMask(form, mask){
+      if(form === voltmx.application.getCurrentForm()){
+        this.view.flxMask.isVisible = mask;
+      }
+    },
+
+    subscribeOpenSelector(listKey){
+      if(listKey === globals.FILTER_CATEGORY_SELECTOR){
+        this.view.listSelector.listKey = listKey;
+        this.view.listSelector.setItems(['All', ...globals.categories], this.filterCategory);
+        this.view.listSelector.isVisible = true;
+      } else if(listKey === globals.FILTER_STATUS_SELECTOR){
+        this.view.listSelector.listKey = listKey;
+        this.view.listSelector.setItems(['All', ...globals.ALL_STATUSES], this.filterStatus);
+        this.view.listSelector.isVisible = true;
+      }
+    },
+
+    subscribeSelectList(listKey, item){
+      if(listKey === globals.FILTER_CATEGORY_SELECTOR){
+        this.filterCategory = item;
+        this.view.filterCategory.selection = item;
+        const filterStatus = this.view.filterStatus.selection === 'All' ? '' : this.view.filterStatus.selection;
+        this.getMainFormCommon().getFaqs(item === 'All' ? '' : item, filterStatus).then((faqs) => {
+          this.view.segFaqs.setData(faqs);
+        }).catch((error) => {
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Error',
+            text: error.message
+          });
+        });
+      } else if(listKey === globals.FILTER_STATUS_SELECTOR){
+        this.filterStatus = item;
+        this.view.filterStatus.selection = item;
+        const filterCategory = this.view.filterCategory.selection === 'All' ? '' : this.view.filterCategory.selection;
+        this.getMainFormCommon().getFaqs(filterCategory, item === 'All' ? '' : item).then((faqs) => {
+          this.view.segFaqs.setData(faqs);
+        }).catch((error) => {
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Error',
+            text: error.message
+          });
+        });
+      }
+    },
+
+    subscribeShowAlert(form, title, text){
+      if(voltmx.application.getCurrentForm() === form){
+        this.view.popupAlert.title = title;
+        this.view.popupAlert.text = text;
+        this.view.popupAlert.isVisible = true;
+      }
+    },
+
+    onRowClick(){
+      const selection = this.view.segFaqs.selectedRowItems[0];
+      this.view.viewFaq.category = selection.category;
+      this.view.viewFaq.question = selection.question;
+      this.view.viewFaq.answer = selection.answer;
+      this.view.viewFaq.toggle(true, false);
+    },
+
+    loadData() {
+      if(globals.categories.length === 0){
+        this.getMainFormCommon().getData().then(({categories, faqs}) => {
+          globals.categories = categories;
+          this.view.listSelector.setItems(['All', ...categories], 'All');
+          this.view.segFaqs.setData(faqs);
+        }).catch((error) => {
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Error',
+            text: error.message
+          });
+        });
+      } else {
+        this.getMainFormCommon().getFaqs(this.filterCategory, this.filterStatus).then((faqs) => {
+          this.view.segFaqs.setData(faqs);
+        }).catch((error) => {
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Error',
+            text: error.message
+          });
+        });
+      }
     }
   };
 });

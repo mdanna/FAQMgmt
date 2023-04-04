@@ -32,9 +32,9 @@ define(function() {
     setItems(items, selection){
       this.view.flxList.removeAll();
       items = items || [];
-      items.forEach((item) => {
+      items.forEach((item, index) => {
         const listSelectorItem = new com.hcl.demo.faqmgmt.ListSelectorItem({
-          id: `item${new Date().valueOf()}`
+          id: `item${index}${new Date().valueOf()}`
         }, {}, {});
         listSelectorItem.listKey = this.listKey;
         listSelectorItem.item = item;

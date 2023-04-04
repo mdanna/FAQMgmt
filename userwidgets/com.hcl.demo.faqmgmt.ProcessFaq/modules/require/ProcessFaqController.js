@@ -97,11 +97,14 @@ define(function() {
         this.toggle(false, false);
         voltmx.print("Record updated: " + JSON.stringify(response));
         eventManager.publish(globals.EVT_RELOAD_FAQ_LIST);
-        alert('Question submitted successfully.');
       }, (error) => {
         voltmx.print("Error while updating record: " + JSON.stringify(error));
         this.toggle(false, false);
-        alert(error.message);
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Error',
+            text: error.message
+          });
       });
     },
     
@@ -121,10 +124,19 @@ define(function() {
         "F_AnswerUserEmail": globals.user_profile.email
       }, (response) => {
         voltmx.print(JSON.stringify(response));
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Info',
+            text: 'FAQ sent successfully to LEAP'
+          });
         this.update(globals.STEP_APPROVED);
       }, (error) => {
         voltmx.print(JSON.stringify(error));
-        alert(error.message);
+          eventManager.publish(globals.EVT_SHOW_ALERT, {
+            form: voltmx.application.getCurrentForm(),
+            title: 'Error',
+            text: error.message
+          });
       });
     }
   };
