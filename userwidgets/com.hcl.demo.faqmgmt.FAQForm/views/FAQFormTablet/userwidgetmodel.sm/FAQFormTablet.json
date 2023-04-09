@@ -45,7 +45,8 @@
         "processFaq",
         "editAnswer",
         "addQuestion",
-        "popupAlert"
+        "popupAlert",
+        "localeSelector"
     ],
     "clipbounds": false,
     "containerweight": 100,

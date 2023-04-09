@@ -35,7 +35,9 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {},
+    "data": {
+        "i18ntitle": "i18n.faq.list"
+    },
     "id": "mainHeader",
     "info": null,
     "iscustomlayout": false,

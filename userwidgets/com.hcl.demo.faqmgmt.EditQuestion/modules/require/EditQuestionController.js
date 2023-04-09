@@ -15,8 +15,8 @@ define(function() {
             } else {
               eventManager.publish(globals.EVT_SHOW_ALERT, {
                 form: voltmx.application.getCurrentForm(),
-                title: 'Warning',
-                text: "Fields Category and Question are required."
+                title: voltmx.i18n.getLocalizedString("i18n.warning"),
+                text: voltmx.i18n.getLocalizedString("i18n.msg.required")
               });
             }
           };
@@ -102,8 +102,8 @@ define(function() {
         this.toggle(false, false);
         eventManager.publish(globals.EVT_SHOW_ALERT, {
           form: voltmx.application.getCurrentForm(),
-          title: 'Error',
-          text: error.message
+          title: voltmx.i18n.getLocalizedString("i18n.error"),
+          text: voltmx.i18n.getLocalizedString("i18n.error.updte")
         });
       });
 

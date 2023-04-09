@@ -40,6 +40,7 @@
     },
     "containerweight": 0,
     "data": {
+        "i18nitem": "i18n.profile",
         "imgIcon": "edit.png",
         "item": "Profile",
         "itemKey": "profile",

@@ -30,24 +30,24 @@ define(function() {
                 voltmx.print("Record created: " + JSON.stringify(response));
                 eventManager.publish(globals.EVT_SHOW_ALERT, {
                   form: voltmx.application.getCurrentForm(),
-                  title: 'Info',
-                  text: 'Question submitted successfully.'
+                  title: voltmx.i18n.getLocalizedString("i18n.info"),
+                  text: voltmx.i18n.getLocalizedString("i18n.question.submitted")
                 });
               }, (error) => {
                 voltmx.print("Error in record creation: " + JSON.stringify(error));
                 this.toggle(false, false);
                 eventManager.publish(globals.EVT_SHOW_ALERT, {
                   form: voltmx.application.getCurrentForm(),
-                  title: 'Error',
-                  text: error.message
+                  title: voltmx.i18n.getLocalizedString("i18n.error"),
+                  text: voltmx.i18n.getLocalizedString("i18n.error.create")
                 });
               });
 
             } else {
                 eventManager.publish(globals.EVT_SHOW_ALERT, {
                   form: voltmx.application.getCurrentForm(),
-                  title: 'Warning',
-                  text: 'Fields Category and Question are required.'
+                  title: voltmx.i18n.getLocalizedString("i18n.warning"),
+                  text: voltmx.i18n.getLocalizedString("i18n.msg.required")
                 });
             }
           };

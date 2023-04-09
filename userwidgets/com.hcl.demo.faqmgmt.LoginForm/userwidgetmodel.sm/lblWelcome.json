@@ -61,6 +61,7 @@
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.welcome",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

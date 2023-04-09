@@ -41,7 +41,8 @@
         "flxMask",
         "listSelector",
         "viewFaq",
-        "popupAlert"
+        "popupAlert",
+        "localeSelector"
     ],
     "clipbounds": false,
     "containerweight": 100,

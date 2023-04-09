@@ -40,6 +40,7 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
+        "i18nlabel": "i18n.send.leap",
         "label": "Send to Leap"
     },
     "desktopweb": {

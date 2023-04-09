@@ -96,6 +96,32 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "c11e30c92a724cb599bed275021d2405"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a32e8feb28bb41d8ba463865a4489713",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 7,
+                    "propertyKey": "i18nlabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "fe70479a3b5e43428da994421f50ca80"
+                        ],
+                        "displayName": "i18nlabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLabel",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g8cf1964213d44cd9802f1b692dd83ae"
                 }
             ]
         },

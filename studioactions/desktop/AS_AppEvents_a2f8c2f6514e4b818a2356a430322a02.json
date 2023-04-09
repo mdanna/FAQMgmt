@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_a2f8c2f6514e4b818a2356a430322a02": {
+        "id": "AS_AppEvents_a2f8c2f6514e4b818a2356a430322a02",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h6672dab82924cb6b14b3bdd617fed6e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "        const user = voltmx.store.getItem('user');\n        if(user){\n          const locale = user.locale || 'en';\n          voltmx.i18n.setCurrentLocaleAsync(locale, () => {});\n        } \n",
+            "parentId": null
+        }]
+    }
+}

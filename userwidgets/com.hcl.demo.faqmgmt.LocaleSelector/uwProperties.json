@@ -1,0 +1,62 @@
+{
+    "classname": "LocaleSelector",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jf1bb68ce1d14e2186de5356d6869fa7",
+                    "paramList": [],
+                    "propertyKey": "load",
+                    "pw": {
+                        "displayName": "load",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3578e2d49b74e8c8e0bcc2c1435b20b",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "ccf21d95924a468d82ea735f0605dfc7",
+                    "originalPropertyKey": "listKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "listKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "listKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3578e2d49b74e8c8e0bcc2c1435b20b",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.demo.faqmgmt",
+    "version": "1.0.0"
+}

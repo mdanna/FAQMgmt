@@ -12,7 +12,9 @@
         "groups": {
             "apis": [],
             "events": [],
-            "properties": [],
+            "properties": [
+                "General"
+            ],
             "widgets": []
         },
         "properties": {
@@ -60,9 +62,35 @@
                 {
                     "access": "Enable",
                     "group": "General",
+                    "kuid": "ja604ce76a864131a902163f6b9eaf8d",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 3,
+                    "propertyKey": "i18nlabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "i972dc3f80b94e20810051aaec717f15"
+                        ],
+                        "displayName": "i18nlabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblFilterLabel",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "de62e7dc70ff4973acb41099dee3ed2f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
                     "kuid": "ed02bf591af94bbba631695ec9d005fb",
                     "originalPropertyKey": "text",
-                    "propertyIndex": 3,
+                    "propertyIndex": 4,
                     "propertyKey": "selection",
                     "pw": {
                         "access": "readwrite",

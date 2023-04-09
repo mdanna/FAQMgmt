@@ -36,6 +36,7 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
+        "i18ntitle": "i18n.faq.management",
         "imgFAQ": "bot_laptop.png",
         "showIconLeft": false,
         "title": "FAQ Management"

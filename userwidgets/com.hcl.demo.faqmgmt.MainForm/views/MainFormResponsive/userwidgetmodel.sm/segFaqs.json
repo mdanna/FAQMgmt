@@ -60,6 +60,7 @@
             {
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 },
                 "img": {
@@ -68,10 +69,12 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 }
             }
@@ -147,7 +150,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorcolor": "aaaaaa00",
     "separatorrequired": false,

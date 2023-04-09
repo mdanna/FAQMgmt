@@ -40,6 +40,7 @@
     },
     "containerweight": 0,
     "data": {
+        "i18nlabel": "i18n.close",
         "label": "Close"
     },
     "desktopweb": {

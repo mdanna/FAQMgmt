@@ -35,7 +35,9 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {},
+    "data": {
+        "i18nlabel": "i18n.login"
+    },
     "desktopweb": {
         "psp": {
             "hoverSkin": "sb650561f78d4c85a0838a4aeaceb9fb"

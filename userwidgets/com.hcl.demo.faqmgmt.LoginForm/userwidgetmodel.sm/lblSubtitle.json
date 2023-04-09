@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "number",
-        "value": "0"
+        "value": "10"
     },
     "_height_": {
         "type": "ref",
@@ -61,6 +61,7 @@
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.poweredby",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

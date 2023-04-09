@@ -12,6 +12,7 @@ define(function() {
               this.view.flxItem.onClick = () => {
                 eventManager.publish(globals.EVT_SELECT_LIST, {
                   listKey: this.listKey,
+                  itemKey: this.itemKey,
                   item: this.item
                 });
               };
@@ -35,6 +36,12 @@ define(function() {
       defineSetter(this, 'selected', value => {
         this._selected = value;
         this.view.skin = value ? 'sknFlxWhiteBorderGreenRounded' : 'slFbox';
+      });
+      defineGetter(this, 'itemKey', () => {
+        return this._itemKey;
+      });
+      defineSetter(this, 'itemKey', value => {
+        this._itemKey = value;
       });
     }
 	};

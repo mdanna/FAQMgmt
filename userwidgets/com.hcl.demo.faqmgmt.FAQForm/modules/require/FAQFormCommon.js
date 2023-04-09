@@ -17,6 +17,8 @@ define(function () {
     },
 
     getFaqs(status){
+      voltmx.application.showLoadingScreen(null, '', constants.LOADING_SCREEN_POSITION_FULL_SCREEN, 
+                                           true, true, {});
       const promise = new Promise((resolve, reject) => {
         var objSvc = voltmx.sdk.getCurrentInstance().getObjectService("FAQmgt", {
           "access": "online"
@@ -43,9 +45,11 @@ define(function () {
               question: faq.question
             });
           });
+          voltmx.application.dismissLoadingScreen();
           resolve(faqs);
         }, (error) => {
           voltmx.print("Failed to fetch: " + JSON.stringify(error));
+          voltmx.application.dismissLoadingScreen();
           reject(error);
         });
       });
@@ -133,8 +137,8 @@ define(function () {
       }).catch((error) => {
         eventManager.publish(globals.EVT_SHOW_ALERT, {
           form: voltmx.application.getCurrentForm(),
-          title: 'Error',
-          text: error.message
+          title: voltmx.i18n.getLocalizedString("i18n.error"),
+          text: voltmx.i18n.getLocalizedString("i18n.error.loading"),
         });
       });
     },

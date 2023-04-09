@@ -18,7 +18,7 @@
     "_padding_": [
         0,
         0,
-        0,
+        1,
         0
     ],
     "_skin_": "s0e23daff007470bb16ea87ebc540327",
@@ -28,8 +28,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "150dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -61,6 +61,7 @@
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.donthave",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

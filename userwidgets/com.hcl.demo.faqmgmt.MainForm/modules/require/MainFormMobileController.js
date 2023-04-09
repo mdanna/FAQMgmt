@@ -25,7 +25,7 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.mainHeader.onClickLeft = () => this.view.hamburgerMenu.toggle(true); 
-          this.view.hamburgerMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected(itemKey);
+          this.view.hamburgerMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected.call(this, itemKey);
 
           this.view.segFaqs.onRowClick = () => mainFormCommon.onRowClick.call(this);
 

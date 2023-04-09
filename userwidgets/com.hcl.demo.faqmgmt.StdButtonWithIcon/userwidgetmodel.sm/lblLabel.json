@@ -68,6 +68,7 @@
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.biometrics",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

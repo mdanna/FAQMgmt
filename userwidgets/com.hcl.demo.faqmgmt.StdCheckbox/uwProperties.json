@@ -56,6 +56,32 @@
                         "wType": "Label"
                     },
                     "srcWgtKUID": "eb4cc02a360b4f95a8b5be3c64ce4cd5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i9d53b4e49fd43868fc61ffc4c884da0",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 3,
+                    "propertyKey": "i18nlabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "d45a00aaf6c646939a323015fedab771"
+                        ],
+                        "displayName": "i18nlabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLabel",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "eb4cc02a360b4f95a8b5be3c64ce4cd5"
                 }
             ]
         },

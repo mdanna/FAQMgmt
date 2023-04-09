@@ -26,7 +26,9 @@
         "groups": {
             "apis": [],
             "events": [],
-            "properties": [],
+            "properties": [
+                "General"
+            ],
             "widgets": []
         },
         "properties": {
@@ -58,7 +60,7 @@
                     "group": "General",
                     "kuid": "efbf480828374ba6b113603304a9601d",
                     "originalPropertyKey": "text",
-                    "propertyIndex": 3,
+                    "propertyIndex": 2,
                     "propertyKey": "title",
                     "pw": {
                         "access": "readwrite",
@@ -77,9 +79,35 @@
                 {
                     "access": "Enable",
                     "group": "General",
+                    "kuid": "f69e50620d044d86a06645e1843de30f",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 3,
+                    "propertyKey": "i18ntitle",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "efbf480828374ba6b113603304a9601d"
+                        ],
+                        "displayName": "i18ntitle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b5fb98fd7a0c4031bc140ff6b2e3a83d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
                     "kuid": "b3badc21cb26476f81374bddae6eac0f",
                     "originalPropertyKey": "src",
-                    "propertyIndex": 5,
+                    "propertyIndex": 4,
                     "propertyKey": "imgFAQ",
                     "pw": {
                         "access": "readwrite",

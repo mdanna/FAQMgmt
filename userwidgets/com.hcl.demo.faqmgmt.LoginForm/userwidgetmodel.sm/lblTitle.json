@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "70dp"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
@@ -65,6 +65,7 @@
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.faq.management",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

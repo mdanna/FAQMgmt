@@ -48,6 +48,7 @@
     },
     "containerweight": 0,
     "data": {
+        "i18nlabel": "i18n.add.question",
         "label": "Add Question"
     },
     "desktopweb": {

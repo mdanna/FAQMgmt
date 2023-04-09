@@ -358,6 +358,7 @@
             {
                 "category": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 },
                 "img": {
@@ -366,10 +367,12 @@
                 },
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 },
                 "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 }
             }

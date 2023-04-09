@@ -44,6 +44,7 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
+        "i18nlabel": "i18n.reject",
         "label": "Reject"
     },
     "desktopweb": {

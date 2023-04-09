@@ -70,6 +70,23 @@
                     "srcWgtKUID": "h37f702ac78645e78f5ad10e0db383f7",
                     "type": "boolean",
                     "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "i4a2989048884941a77ecc8743b35b8b",
+                    "originalPropertyKey": "itemKey",
+                    "propertyIndex": 4,
+                    "propertyKey": "itemKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "itemKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h37f702ac78645e78f5ad10e0db383f7",
+                    "type": "string",
+                    "value": ""
                 }
             ],
             "passthrough": [

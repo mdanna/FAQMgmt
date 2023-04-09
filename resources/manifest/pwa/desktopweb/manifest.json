@@ -1,44 +1,39 @@
 {
-    "theme_color": "#FF0000",
+    "theme_color": "#61c992",
     "orientation": "any",
-    "background_color": "#FFFFFF",
-    "display": "standalone",
-    "name": "FAQMgmt",
+    "background_color": "#61c992",
+	"display": "standalone",
+	"name": "FAQMgmt",
 	"id": "FAQMgmt",
-    "short_name": "FAQMgmt",
+	"short_name": "FAQMgmt",
 	"start_url": "/apps/FAQMgmt/",
-    "icons": [{
-    "src": "voltmx_48.png",
-    "sizes": "48x48",
-    "type": "image/png"
-	  }, {
-		"src": "voltmx_71.png",
+	"icons": [{
+		"src": "bot48.png",
+		"sizes": "48x48",
+		"type": "image/png"
+	}, {
+		"src": "bot72.png",
 		"sizes": "72x72",
 		"type": "image/png"
-	  }, {
-		"src": "voltmx_88.png",
+	}, {
+		"src": "bot96.png",
 		"sizes": "96x96",
 		"type": "image/png"
-	  }, {
-		"src": "voltmx_150.png",
+	}, {
+		"src": "bot144.png",
 		"sizes": "144x144",
 		"type": "image/png"
-	  }, {
-		"src": "voltmx_150.png",
+	}, {
+		"src": "bot168.png",
 		"sizes": "168x168",
 		"type": "image/png"
-	  }, {
-		  "src": "voltmx_300.png",
-		  "type": "image/png",
-		  "sizes": "192x192"
-    },
-    {
-      "src": "voltmx_300.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }],
-    "related_applications": [{
-        "platform": "web",
-		"url": "http://localhost:port/apps/FAQMgmt/"
-    }]
+	}, {
+		"src": "bot192.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	}, {
+		"src": "bot512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}]
 }

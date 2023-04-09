@@ -37,10 +37,10 @@
     ],
     "containerweight": 100,
     "currentBreakpoint": {
-        "kuid": "b1",
-        "width": 1366
+        "kuid": "b3",
+        "width": 640
     },
-    "currentLocale": "none",
+    "currentLocale": "default",
     "device": "desktopweb",
     "displayorientation": 3,
     "enabledforidletimeout": false,
@@ -63,8 +63,8 @@
     },
     "paddinginpixel": false,
     "platform": "desktopweb",
-    "prevDevice": "kiosk",
-    "prevPlatform": "kiosk",
+    "prevDevice": "desktopweb",
+    "prevPlatform": "desktopweb",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,

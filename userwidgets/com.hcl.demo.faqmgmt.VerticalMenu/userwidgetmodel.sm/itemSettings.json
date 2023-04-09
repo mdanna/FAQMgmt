@@ -40,6 +40,7 @@
     },
     "containerweight": 0,
     "data": {
+        "i18nitem": "i18n.settings",
         "imgIcon": "edit.png",
         "item": "Settings",
         "itemKey": "settings",

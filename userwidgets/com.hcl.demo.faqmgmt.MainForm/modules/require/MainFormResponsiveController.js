@@ -31,8 +31,8 @@ define(function() {
           };
           
           this.view.mainHeader.onClickLeft = () => this.view.hamburgerMenu.toggle(true);
-          this.view.hamburgerMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected(itemKey);
-          this.view.verticalMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected(itemKey);
+          this.view.hamburgerMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected.call(this, itemKey);
+          this.view.verticalMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected.call(this, itemKey);
 
           this.view.segFaqs.onRowClick = () => mainFormCommon.onRowClick.call(this);
 

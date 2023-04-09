@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s995e9fe286c4b15a198585b07f64cec",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {},
+    "id": "localeSelector",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "g76e1a1566b8445c88b7ddbd9c5bbd87",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "FAQFormTablet",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "b3578e2d49b74e8c8e0bcc2c1435b20b",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

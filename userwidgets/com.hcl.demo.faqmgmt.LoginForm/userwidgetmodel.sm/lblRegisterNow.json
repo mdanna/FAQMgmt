@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "sd2429bdae5b46d38c09616c65012da5",
-    "_text_": "Register Now",
+    "_text_": "Register now",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -66,6 +66,7 @@
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.register.now",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

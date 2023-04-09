@@ -9,7 +9,6 @@ define(function() {
           this.initDone = true;
         }
       };
-
     },
     //Logic for getters/setters of custom properties
     initGettersSetters: function() {

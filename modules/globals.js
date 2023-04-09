@@ -36,5 +36,7 @@ const globals = {
   EDIT_QUESTION_CATEGORY_SELECTOR: 'editQuestionCategorySelector',
   
   user_profile: null,
-  categories: []
+  categories: [],
+  
+  locales: ['en', 'es', 'pt', 'it', 'ja']
 };

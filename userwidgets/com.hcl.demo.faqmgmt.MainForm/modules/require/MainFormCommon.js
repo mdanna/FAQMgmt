@@ -8,6 +8,10 @@ define(function () {
         case globals.FAQ_LIST_KEY:
           new voltmx.mvc.Navigation('frmMain').navigate();
           break;
+        case globals.SETINGS_KEY:
+          this.view.localeSelector.isVisible = true;
+          this.view.localeSelector.load();
+          break;
         case globals.LOGOUT_KEY:
           new voltmx.mvc.Navigation('frmLogin').navigate();
           break;
@@ -67,10 +71,14 @@ define(function () {
     },
 
     getData(){
+      voltmx.application.showLoadingScreen(null, '', constants.LOADING_SCREEN_POSITION_FULL_SCREEN, 
+                                           true, true, {});
       const promise = new Promise((resolve, reject) => {
         Promise.all([this.getCategories(), this.getFaqs('', globals.STATUS_APPROVED)]).then((response) => {
           resolve({categories: response[0], faqs: response[1]});
+          voltmx.application.dismissLoadingScreen();
         }).catch((error) => {
+          voltmx.application.dismissLoadingScreen();
           reject(error);
         });
       });
@@ -105,8 +113,8 @@ define(function () {
         }).catch((error) => {
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.loading")
           });
         });
       } else if(listKey === globals.FILTER_STATUS_SELECTOR){
@@ -118,8 +126,8 @@ define(function () {
         }).catch((error) => {
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.loading")
           });
         });
       }
@@ -150,8 +158,8 @@ define(function () {
         }).catch((error) => {
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.loading")
           });
         });
       } else {
@@ -160,8 +168,8 @@ define(function () {
         }).catch((error) => {
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.loading"),
           });
         });
       }

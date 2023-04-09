@@ -24,7 +24,7 @@ define(function() {
 
       this.view.preShow = () => {
         if(!this.initDone){
-          this.view.verticalMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected(itemKey);
+          this.view.verticalMenu.onItemSelected = (itemKey) => mainFormCommon.onItemSelected.call(this, itemKey);
 
           this.view.segFaqs.onRowClick = () => mainFormCommon.onRowClick.call(this);
 

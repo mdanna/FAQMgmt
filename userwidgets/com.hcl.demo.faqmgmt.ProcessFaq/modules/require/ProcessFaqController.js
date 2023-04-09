@@ -102,8 +102,8 @@ define(function() {
         this.toggle(false, false);
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.update"),
           });
       });
     },
@@ -126,16 +126,16 @@ define(function() {
         voltmx.print(JSON.stringify(response));
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Info',
-            text: 'FAQ sent successfully to LEAP'
+            title: voltmx.i18n.getLocalizedString("i18n.info"),
+            text: voltmx.i18n.getLocalizedString("i18n.msg.leap"),
           });
         this.update(globals.STEP_APPROVED);
       }, (error) => {
         voltmx.print(JSON.stringify(error));
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.sending"),
           });
       });
     }

@@ -40,6 +40,7 @@
     },
     "containerweight": 0,
     "data": {
+        "i18nitem": "i18n.faq.management",
         "imgIcon": "bot_laptop.png",
         "item": "FAQ Management",
         "itemKey": "faqMgmt",

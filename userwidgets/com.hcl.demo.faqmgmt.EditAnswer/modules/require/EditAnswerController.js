@@ -86,7 +86,6 @@ define(function() {
         objSvc.update({
           "dataObject": dataObject
         }, (response) => {
-
           this.toggle(false, false);
           voltmx.print("Record updated: " + JSON.stringify(response));
           eventManager.publish(globals.EVT_RELOAD_FAQ_LIST);
@@ -95,18 +94,17 @@ define(function() {
           this.toggle(false, false);
           eventManager.publish(globals.EVT_SHOW_ALERT, {
             form: voltmx.application.getCurrentForm(),
-            title: 'Error',
-            text: error.message
+            title: voltmx.i18n.getLocalizedString("i18n.error"),
+            text: voltmx.i18n.getLocalizedString("i18n.error.update")
           });
         });
       } else {
         eventManager.publish(globals.EVT_SHOW_ALERT, {
           form: voltmx.application.getCurrentForm(),
-          title: 'Warning',
-          text: 'Please provide an answer'
+          title: voltmx.i18n.getLocalizedString("i18n.wrning"),
+          text: voltmx.i18n.getLocalizedString("i18n.msg.answer")
         });
       }
-
     }    
   };
 });

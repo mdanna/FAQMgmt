@@ -83,7 +83,6 @@
                 },
                 {
                     "access": "Enable",
-                    "defaultSkinKUID": "sbc2a6155e364b8592400e8d0cd0cfa0",
                     "group": "General",
                     "kuid": "b6601f71c6e943c99b4dfcc537096ae3",
                     "originalPropertyKey": "skin",
@@ -92,6 +91,7 @@
                     "pw": {
                         "access": "readwrite",
                         "category": "skin",
+                        "dependencyConditions": {},
                         "dependentKeysKUIDs": null,
                         "displayName": "skinField",
                         "isHiddenInTool": false,
@@ -99,6 +99,56 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "f86b1a2ccec444b99afa25b36dbb7202"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d7ce217952aa4b05b9d8ba1005966128",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 5,
+                    "propertyKey": "i18nlabel",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "g36eb716a5f84815ab6940a3143ed3d4"
+                        ],
+                        "displayName": "i18nlabel",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLabel",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "de811be0876d4c4c8127104fb5193359"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d9a3da4b58244188a5bcdbaff9e73b59",
+                    "originalPropertyKey": "i18n_placeholder",
+                    "propertyIndex": 6,
+                    "propertyKey": "i18nplaceholder",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "placeholder"
+                        ],
+                        "dependentKeysKUIDs": null,
+                        "displayName": "i18nplaceholder",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txaField",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "TextArea"
+                    },
+                    "srcWgtKUID": "i523036a16114ee495c902a1da24c9ba"
                 }
             ]
         },

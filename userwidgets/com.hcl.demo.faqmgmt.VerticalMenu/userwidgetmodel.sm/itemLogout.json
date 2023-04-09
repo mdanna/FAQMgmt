@@ -40,6 +40,7 @@
     },
     "containerweight": 0,
     "data": {
+        "i18nitem": "i18n.logout",
         "imgIcon": "edit.png",
         "item": "Logout",
         "itemKey": "logout",
