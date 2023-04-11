@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "string",
-        "value": "-100%"
+        "value": "0%"
     },
     "_height_": {
         "type": "ref",
@@ -53,7 +53,7 @@
     "id": "ViewFaq",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "f98049a5a3ca40d8a637a5ad65d08082",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

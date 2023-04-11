@@ -39,9 +39,10 @@
         }
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "status",
+    "id": "displayStatus",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f33d7e11cf704f79a27636e94beb576e",
+    "kuid": "f1d929a83d234e3caabbfd71f1a5868a",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
     "parent": "flxTop",

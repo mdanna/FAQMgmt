@@ -8,7 +8,7 @@ define(function () {
         case globals.FAQ_LIST_KEY:
           new voltmx.mvc.Navigation('frmMain').navigate();
           break;
-        case globals.SETINGS_KEY:
+        case globals.SETTINGS_KEY:
           this.view.localeSelector.isVisible = true;
           this.view.localeSelector.load();
           break;
@@ -58,6 +58,7 @@ define(function () {
               img: faq.F_PictureURL_txt,
               answer: faq.F_Description,
               status: faq.flowState,
+              displayStatus: voltmx.i18n.getLocalizedString(`i18n.status.${faq.flowState}`),
               question: faq.F_Title
             });
           });
@@ -98,16 +99,17 @@ define(function () {
         this.view.listSelector.isVisible = true;
       } else if(listKey === globals.FILTER_STATUS_SELECTOR){
         this.view.listSelector.listKey = listKey;
-        this.view.listSelector.setItems(['All', ...globals.ALL_STATUSES], this.filterStatus);
+        this.view.listSelector.setItems([voltmx.i18n.getLocalizedString('i18n.all'), ...globals.getDisplayStatuses()], 
+                                        this.filterStatus, ['All', ...globals.ALL_STATUSES]);
         this.view.listSelector.isVisible = true;
       }
     },
 
-    subscribeSelectList(listKey, item){
+    subscribeSelectList(listKey, item, itemKey){
       if(listKey === globals.FILTER_CATEGORY_SELECTOR){
         this.filterCategory = item;
         this.view.filterCategory.selection = item;
-        const filterStatus = this.view.filterStatus.selection === 'All' ? '' : this.view.filterStatus.selection;
+        const filterStatus = this.view.filterStatus.selectionKey === 'All' ? '' : this.view.filterStatus.selectionKey;
         this.getMainFormCommon().getFaqs(item === 'All' ? '' : item, filterStatus).then((faqs) => {
           this.view.segFaqs.setData(faqs);
         }).catch((error) => {
@@ -118,10 +120,10 @@ define(function () {
           });
         });
       } else if(listKey === globals.FILTER_STATUS_SELECTOR){
-        this.filterStatus = item;
+        this.filterStatus = itemKey;
         this.view.filterStatus.selection = item;
         const filterCategory = this.view.filterCategory.selection === 'All' ? '' : this.view.filterCategory.selection;
-        this.getMainFormCommon().getFaqs(filterCategory, item === 'All' ? '' : item).then((faqs) => {
+        this.getMainFormCommon().getFaqs(filterCategory, itemKey === 'All' ? '' : itemKey).then((faqs) => {
           this.view.segFaqs.setData(faqs);
         }).catch((error) => {
           eventManager.publish(globals.EVT_SHOW_ALERT, {

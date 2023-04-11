@@ -29,7 +29,7 @@ define(function() {
       });
     },
 
-    setItems(items, selection){
+    setItems(items, selection, keys){
       this.view.flxList.removeAll();
       items = items || [];
       items.forEach((item, index) => {
@@ -38,6 +38,7 @@ define(function() {
         }, {}, {});
         listSelectorItem.listKey = this.listKey;
         listSelectorItem.item = item;
+        keys && (listSelectorItem.itemKey = keys[index]);
         listSelectorItem.selected = item === selection;
         listSelectorItem.onClickItem = () => {
           eventManager.publish(globals.EVT_SELECT_LIST, {

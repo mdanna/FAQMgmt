@@ -8,6 +8,10 @@ define(function () {
         case globals.FAQ_LIST_KEY:
           new voltmx.mvc.Navigation('frmMain').navigate();
           break;
+        case globals.SETTINGS_KEY:
+          this.view.localeSelector.isVisible = true;
+          this.view.localeSelector.load();
+          break;
         case globals.LOGOUT_KEY:
           new voltmx.mvc.Navigation('frmLogin').navigate();
           break;
@@ -42,6 +46,7 @@ define(function () {
               img: faq.thumbnail,
               answer: faq.answer,
               status: faq.workflowStatus,
+              displayStatus: voltmx.i18n.getLocalizedString(`i18n.step.${faq.workflowStatus}`),
               question: faq.question
             });
           });
@@ -73,15 +78,17 @@ define(function () {
         this.view.listSelector.isVisible = true;
       } else if(listKey === globals.FILTER_STEP_SELECTOR){
         this.view.listSelector.listKey = listKey;
-        this.view.listSelector.setItems(['All', ...globals.ALL_STEPS], this.view.filterStep.selection);
+        this.view.listSelector.setItems([voltmx.i18n.getLocalizedString('i18n.all'), ...globals.getDisplaySteps()], 
+                                        this.view.filterStep.selection, ['All', ...globals.ALL_STEPS]);
         this.view.listSelector.isVisible = true;
       }
     },
 
-    subscribeSelectList(listKey, item){
+    subscribeSelectList(listKey, item, itemKey){
       if(listKey === globals.FILTER_STEP_SELECTOR){
         this.view.filterStep.selection = item;
-        this.getFaqFormCommon().loadData.call(this, item);
+        this.view.filterStep.selectionKey = itemKey;
+        this.getFaqFormCommon().loadData.call(this, itemKey);
       } else if(listKey === globals.EDIT_QUESTION_CATEGORY_SELECTOR){
         this.view.editQuestion.category = item;
       } else if(listKey === globals.ADD_QUESTION_CATEGORY_SELECTOR){

@@ -33,6 +33,7 @@
         "value": "80dp"
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "id": "img",
     "imagescalemode": 1,

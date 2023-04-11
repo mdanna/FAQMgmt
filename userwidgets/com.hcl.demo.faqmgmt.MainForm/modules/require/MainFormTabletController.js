@@ -18,8 +18,8 @@ define(function() {
         mainFormCommon.subscribeOpenSelector.call(this, listKey);
       });
 
-      eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item}) => {
-        mainFormCommon.subscribeSelectList.call(this, listKey, item);
+      eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item, itemKey}) => {
+        mainFormCommon.subscribeSelectList.call(this, listKey, item, itemKey);
       });
 
       this.view.preShow = () => {

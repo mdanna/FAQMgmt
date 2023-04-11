@@ -2,9 +2,14 @@ define(function() {
 
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
+      eventManager.subscribe(globals.EVT_SET_LOCALE, () => {
+        this.view.lblLanguage.text = voltmx.i18n.getLocalizedString('i18n.set.language');
+      });
+      
       eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item, itemKey}) => {
         if(listKey === this.listKey){
           voltmx.i18n.setCurrentLocaleAsync(itemKey, () => {
+            eventManager.publish(globals.EVT_SET_LOCALE, itemKey);
             voltmx.timer.schedule('timerSelectList', () => {
               this.view.isVisible = false;
               const user = voltmx.store.getItem('user');

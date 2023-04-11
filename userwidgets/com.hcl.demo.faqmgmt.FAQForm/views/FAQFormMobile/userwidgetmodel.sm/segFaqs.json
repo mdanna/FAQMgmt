@@ -63,6 +63,10 @@
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Category"
                 },
+                "displayStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                },
                 "img": {
                     "@class": "com.viz.ide.model.segment.ImageSegmentData",
                     "src": "bot_laptop.png"
@@ -70,10 +74,6 @@
                 "question": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Question"
-                },
-                "status": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Status"
                 }
             }
         ],
@@ -81,14 +81,14 @@
         "rowtemplate": "Flex0c0e9faf36cf649",
         "widgetdatamap": {
             "category": "category",
+            "displayStatus": "displayStatus",
             "flxAnswer": "flxAnswer",
             "flxContentArea": "flxContentArea",
             "flxFaqData": "flxFaqData",
             "flxFaqs": "flxFaqs",
             "flxTop": "flxTop",
             "img": "img",
-            "question": "question",
-            "status": "status"
+            "question": "question"
         }
     },
     "focusedindex": null,
@@ -120,16 +120,15 @@
                     "i18nkey": "i18n.loading",
                     "text": "Loading..."
                 },
+                "displayStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                },
                 "img": {
                     "@class": "com.viz.ide.model.segment.ImageSegmentData",
                     "src": "bot_laptop.png"
                 },
                 "question": {
-                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "i18nkey": "i18n.loading",
-                    "text": "Loading..."
-                },
-                "status": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "i18nkey": "i18n.loading",
                     "text": "Loading..."
@@ -140,14 +139,14 @@
         "rowtemplate": "flxFaqs",
         "widgetdatamap": {
             "category": "category",
+            "displayStatus": "displayStatus",
             "flxAnswer": "flxAnswer",
             "flxContentArea": "flxContentArea",
             "flxFaqData": "flxFaqData",
             "flxFaqs": "flxFaqs",
             "flxTop": "flxTop",
             "img": "img",
-            "question": "question",
-            "status": "status"
+            "question": "question"
         }
     },
     "name": "kony.ui.SegmentedUI2",

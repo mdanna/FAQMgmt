@@ -36,9 +36,10 @@
     "canUpdateUI": true,
     "children": [
         "category",
-        "status"
+        "displayStatus"
     ],
     "clipbounds": false,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxTop",

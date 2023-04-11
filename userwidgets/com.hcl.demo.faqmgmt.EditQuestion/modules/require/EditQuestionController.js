@@ -3,6 +3,12 @@ define(function() {
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
+      eventManager.subscribe(globals.EVT_SET_LOCALE, () => {
+        this.view.fieldCategory.label = voltmx.i18n.getLocalizedString('i18n.category.required');
+        this.view.fieldQuestion.text = voltmx.i18n.getLocalizedString('i18n.question.required');
+        this.view.buttonSubmit.label = voltmx.i18n.getLocalizedString('i18n.update.question');
+      });
+      
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.imgClose.onTouchEnd = () => this.toggle(false, false);

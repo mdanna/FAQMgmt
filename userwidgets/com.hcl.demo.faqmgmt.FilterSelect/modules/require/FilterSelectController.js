@@ -22,6 +22,12 @@ define(function() {
       defineSetter(this, 'listKey', value => {
         this._listKey = value;
       });
+      defineGetter(this, 'selectionKey', () => {
+        return this._selectionKey;
+      });
+      defineSetter(this, 'selectionKey', value => {
+        this._selectionKey = value;
+      });
     }
   };
 });

@@ -2,7 +2,15 @@ define(function() {
 
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
-
+		
+      eventManager.subscribe(globals.EVT_SET_LOCALE, () => {
+        this.view.fieldCategory.label = voltmx.i18n.getLocalizedString('i18n.category.required');
+        this.view.fieldQuestion.text = voltmx.i18n.getLocalizedString('i18n.question.required');
+        this.view.fieldQuestion.placeholder = voltmx.i18n.getLocalizedString('i18n.enter.question');
+        this.view.fieldNotifyMe.label = voltmx.i18n.getLocalizedString('i18n.notify.me');
+        this.view.buttonSubmit.label = voltmx.i18n.getLocalizedString('i18n.submit.question');
+      });
+      
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.imgClose.onTouchEnd = () => this.toggle(false, false);
@@ -63,6 +71,13 @@ define(function() {
     },
 
     toggle(open, skipAnimation){
+      if(open){
+        //reset fields upon opening
+        this.view.fieldCategory.selection = '';
+        this.view.fieldQuestion.text = '';
+        this.view.fieldNotifyMe.status = false;
+      }
+      
       if(skipAnimation){
         this.view.isVisible = open;
         eventManager.publish(globals.EVT_MASK, {

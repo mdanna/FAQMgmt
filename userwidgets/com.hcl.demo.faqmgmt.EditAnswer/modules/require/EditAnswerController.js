@@ -3,6 +3,13 @@ define(function() {
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
+      eventManager.subscribe(globals.EVT_SET_LOCALE, () => {
+        this.view.fieldCategory.label = voltmx.i18n.getLocalizedString('i18n.category');
+        this.view.fieldQuestion.text = voltmx.i18n.getLocalizedString('i18n.question');
+        this.view.fieldAnswer.label = voltmx.i18n.getLocalizedString('i18n.answer.required');
+        this.view.buttonSendToReview.label = voltmx.i18n.getLocalizedString('i18n.send.review');
+      });
+      
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.imgClose.onTouchEnd = () => this.toggle(false, false);
@@ -18,7 +25,7 @@ define(function() {
         return this._status;
       });
       defineSetter(this, 'status', value => {
-        this.view.lblStatus.text = value;
+        this.view.lblStatus.text = voltmx.i18n.getLocalizedString(`i18n.step.${value}`);
       });
       defineGetter(this, 'faqId', () => {
         return this._faqId;

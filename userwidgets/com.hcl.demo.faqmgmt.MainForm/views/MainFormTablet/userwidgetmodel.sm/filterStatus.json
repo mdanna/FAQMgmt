@@ -45,9 +45,11 @@
     "containerweight": 0,
     "data": {
         "i18nlabel": "i18n.filter.by.status",
+        "i18selection": "i18n.status.ST_Approved",
         "label": "Filter by Status: ",
         "listKey": "filterStatusSelector",
-        "selection": "ST_Approved"
+        "selection": "Approved",
+        "selectionKey": "ST_Approved"
     },
     "id": "filterStatus",
     "info": null,

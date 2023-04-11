@@ -38,6 +38,7 @@
         "question"
     ],
     "clipbounds": false,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxAnswer",

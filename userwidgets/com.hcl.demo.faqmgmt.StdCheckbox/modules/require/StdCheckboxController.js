@@ -1,19 +1,21 @@
 define(function() {
 
-	return {
-		constructor: function(baseConfig, layoutConfig, pspConfig) {
-          this.view.preShow = () => {
-            if(!this.initDone){
-              this.view.onClick = () => {
-                this.status = !this.status;
-              };
-              this.initDone = true;
-            }
+  return {
+    
+    constructor: function(baseConfig, layoutConfig, pspConfig) {
+      
+      this.view.preShow = () => {
+        if(!this.initDone){
+          this.view.onClick = () => {
+            this.status = !this.status;
           };
+          this.initDone = true;
+        }
+      };
 
-		},
-		//Logic for getters/setters of custom properties
-		initGettersSetters: function() {
+    },
+    //Logic for getters/setters of custom properties
+    initGettersSetters: function() {
       defineGetter(this, 'status', () => {
         return this._status;
       });
@@ -23,5 +25,5 @@ define(function() {
         this.view.lblOff.isVisible = !value;
       });
     }
-	};
+  };
 });

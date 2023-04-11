@@ -12,9 +12,7 @@
         "groups": {
             "apis": [],
             "events": [],
-            "properties": [
-                "General"
-            ],
+            "properties": [],
             "widgets": []
         },
         "properties": {
@@ -30,6 +28,23 @@
                     "pw": {
                         "dependencyConditions": {},
                         "displayName": "listKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a61c49690f704c41b9d9312c925951f1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "All",
+                    "group": "General",
+                    "kuid": "fa2ed5942e6546cab08c5699faaff0a8",
+                    "originalPropertyKey": "selectionKey",
+                    "propertyIndex": 6,
+                    "propertyKey": "selectionKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "selectionKey",
                         "uiRepresentation": "Label-Textbox"
                     },
                     "srcWgtKUID": "a61c49690f704c41b9d9312c925951f1",
@@ -102,6 +117,32 @@
                         "srcWidget": "lblSelection",
                         "type": "string",
                         "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bfb378a050244a1797d39e5f4bf1efed"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b996b17690174373938f847839d6dddb",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 5,
+                    "propertyKey": "i18selection",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "ed02bf591af94bbba631695ec9d005fb"
+                        ],
+                        "displayName": "i18selection",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblSelection",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
                         "wType": "Label"
                     },
                     "srcWgtKUID": "bfb378a050244a1797d39e5f4bf1efed"

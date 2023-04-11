@@ -113,6 +113,7 @@
     },
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "i18n.all",
     "textstyle": {},
     "tooltip": "",
     "wType": "Label",

@@ -18,8 +18,8 @@ define(function() {
         mainFormCommon.subscribeOpenSelector.call(this, listKey);
       });
       
-      eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item}) => {
-        mainFormCommon.subscribeSelectList.call(this, listKey, item);
+      eventManager.subscribe(globals.EVT_SELECT_LIST, ({listKey, item, itemKey}) => {
+        mainFormCommon.subscribeSelectList.call(this, listKey, item, itemKey);
       });
 
       this.view.preShow = () => {
@@ -27,7 +27,8 @@ define(function() {
           this.view.onBreakpointChange = (form, breakpoint) => {
             this.view.verticalMenu.isVisible = breakpoint !== globals.BREAKPOINT_SMALL;
             this.view.filterCategory.selection = this.filterCategory;
-            this.view.filterStatus.selection = this.filterStatus;
+            this.view.filterStatus.selectionKey = this.filterStatus;
+            this.view.filterStatus.selection = voltmx.i18n.getLocalizedString(`i18n.status.${this.filterStatus}`);
           };
           
           this.view.mainHeader.onClickLeft = () => this.view.hamburgerMenu.toggle(true);

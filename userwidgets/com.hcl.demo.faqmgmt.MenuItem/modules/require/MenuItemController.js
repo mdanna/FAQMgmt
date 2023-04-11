@@ -19,7 +19,7 @@ define(function() {
         this._itemKey = value;
       });
     },
-    
+
     onItemClick(){}
   };
 });

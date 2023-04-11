@@ -41,7 +41,7 @@
         "width": 1366
     },
     "currentLocale": "default",
-    "device": "desktopweb",
+    "device": "iPhone13ProMax",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "userwidgetmodel",
@@ -62,9 +62,9 @@
         "formTransition": "None"
     },
     "paddinginpixel": false,
-    "platform": "desktopweb",
-    "prevDevice": "iPhone13ProMax",
-    "prevPlatform": "iphone",
+    "platform": "iphone",
+    "prevDevice": "desktopweb",
+    "prevPlatform": "desktopweb",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
