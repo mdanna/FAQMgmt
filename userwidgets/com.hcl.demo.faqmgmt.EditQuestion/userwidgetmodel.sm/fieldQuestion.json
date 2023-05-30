@@ -38,7 +38,7 @@
     "data": {
         "i18nlabel": "i18n.question.required",
         "i18nplaceholder": "i18n.enter.question",
-        "label": "Question *",
+        "label": "",
         "placeholder": "Please enter question",
         "text": ""
     },

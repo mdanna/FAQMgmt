@@ -40,12 +40,6 @@ define(function() {
         listSelectorItem.item = item;
         keys && (listSelectorItem.itemKey = keys[index]);
         listSelectorItem.selected = item === selection;
-        listSelectorItem.onClickItem = () => {
-          eventManager.publish(globals.EVT_SELECT_LIST, {
-            listKey: this.listKey,
-            item
-          });
-        };
         this.view.flxList.add(listSelectorItem);
       });
       this.view.flxList.height = `${items.length * 50}dp`;

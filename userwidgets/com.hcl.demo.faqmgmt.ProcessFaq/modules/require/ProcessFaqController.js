@@ -5,8 +5,8 @@ define(function() {
 
       eventManager.subscribe(globals.EVT_SET_LOCALE, () => {
         this.view.fieldCategory.label = voltmx.i18n.getLocalizedString('i18n.category');
-        this.view.fieldQuestion.text = voltmx.i18n.getLocalizedString('i18n.question');
-        this.view.fieldAnswer.text = voltmx.i18n.getLocalizedString('i18n.answer');
+        this.view.fieldQuestion.label = voltmx.i18n.getLocalizedString('i18n.question');
+        this.view.fieldAnswer.label = voltmx.i18n.getLocalizedString('i18n.answer');
         this.view.buttonReject.label = voltmx.i18n.getLocalizedString('i18n.reject');
         this.view.buttonSendToSquad.label = voltmx.i18n.getLocalizedString('i18n.send.squad');
         this.view.buttonRejectAnswer.label = voltmx.i18n.getLocalizedString('i18n.reject');

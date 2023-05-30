@@ -40,6 +40,9 @@
     "device": "iPhone13ProMax",
     "displayorientation": 3,
     "enabledforidletimeout": false,
+    "globalUserWidgetRefs": [
+        "ub992b9c9a2d492fa9b6e21388e24a18"
+    ],
     "id": "userwidgetmodel",
     "info": null,
     "initdone": false,

@@ -16,12 +16,12 @@
         1
     ],
     "_padding_": [
-        3,
+        5,
         0,
-        3,
+        5,
         0
     ],
-    "_skin_": "s98265597b9d4b07aefb3255ab9dccba",
+    "_skin_": "sedb7caf6bfa43119fbc1f6f527569dd",
     "_text_": "Category",
     "_top_": {
         "type": "string",
@@ -45,7 +45,7 @@
     },
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "category",
     "info": null,
     "ipad": {
@@ -67,6 +67,7 @@
     "pf": "tplFaqs",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "textstyle": {},
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

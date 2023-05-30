@@ -38,8 +38,8 @@
     "data": {
         "i18nlabel": "i18n.answer.required",
         "i18nplaceholder": "i18n.enter.answer",
-        "label": "Answer *",
-        "placeholder": "Please enter answer",
+        "label": "",
+        "placeholder": "",
         "text": ""
     },
     "id": "fieldAnswer",

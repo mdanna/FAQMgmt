@@ -7,27 +7,7 @@
         },
         "events": {
             "custom": [],
-            "passthrough": [
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "dd8e768bb6aa49a5afd60c7c4d159c0a",
-                    "originalPropertyKey": "onClick",
-                    "propertyIndex": 1,
-                    "propertyKey": "onClickItem",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "action",
-                        "displayName": "onClickItem",
-                        "srcWidget": "flxItem",
-                        "type": "action",
-                        "uiRepresentation": "Label-Label-Button-Button",
-                        "wType": "FlexContainer"
-                    },
-                    "srcWgtKUID": "idc3e9043f904968a330191862740c18",
-                    "translateAtInstance": false
-                }
-            ]
+            "passthrough": []
         },
         "groups": {
             "apis": [],

@@ -41,7 +41,7 @@
     "containerweight": 0,
     "data": {
         "i18nlabel": "i18n.send.review",
-        "label": "Send to Review"
+        "label": ""
     },
     "desktopweb": {
         "psp": {

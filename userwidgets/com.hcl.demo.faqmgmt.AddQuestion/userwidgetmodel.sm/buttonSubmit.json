@@ -41,7 +41,7 @@
     "containerweight": 0,
     "data": {
         "i18nlabel": "i18n.submit.question",
-        "label": "Submit Question"
+        "label": ""
     },
     "desktopweb": {
         "psp": {

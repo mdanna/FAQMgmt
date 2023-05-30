@@ -12,9 +12,9 @@
         1
     ],
     "_padding_": [
-        3,
+        5,
         0,
-        3,
+        5,
         0
     ],
     "_right_": {
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "displayStatus",
     "info": null,
     "ipad": {
@@ -63,6 +63,7 @@
     "pf": "tplFaqs",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "textstyle": {},
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

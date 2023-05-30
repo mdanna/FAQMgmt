@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "i18ntitle": "i18n.faq.list",
+        "i18ntitle": "i18n.faqmgmgt.list",
         "showIconLeft": false
     },
     "id": "mainHeader",

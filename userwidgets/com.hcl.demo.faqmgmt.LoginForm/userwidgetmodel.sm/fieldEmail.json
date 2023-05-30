@@ -39,7 +39,8 @@
         "i18nlabel": "i18n.email",
         "i18nplaceholder": "i18n.enter.email",
         "label": "Email Address",
-        "placeholder": "Enter email here"
+        "placeholder": "Enter email here",
+        "secureTextEntry": false
     },
     "id": "fieldEmail",
     "info": null,

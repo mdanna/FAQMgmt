@@ -37,7 +37,7 @@
     "containerweight": 0,
     "data": {
         "i18nlabel": "i18n.category.required",
-        "label": "Category *",
+        "label": "",
         "listKey": "addQuestionCategorySelector",
         "selection": ""
     },
